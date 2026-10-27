@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>কষে-দেখি-17</title>
+<style>.st-math-card{background:rgb(255,255,255);border:1px solid rgb(234,236,240);border-radius:12px;margin-bottom:25px;overflow:hidden;box-shadow:rgba(0,0,0,0.02) 0px 4px 6px -1px}.st-math-q{background-color:rgb(248,250,252);border-bottom:2px solid rgb(226,232,240);padding:18px 24px;font-size:1.15rem;font-weight:700;color:rgb(15,23,42);line-height:1.6}.st-math-ans{padding:24px;font-size:1.05rem;color:rgb(51,65,85);line-height:1.8}.st-calc-step{border-left:3px solid rgb(203,213,225);background:rgb(248,250,252);padding:15px 15px 15px 20px;border-radius:0px 8px 8px 0px;height:100%;font-size:1.1rem;overflow-x:auto}.st-calc-step p{margin-bottom:6px}.st-calc-step p:last-child{margin-bottom:0px}.table-responsive{border-radius:8px;overflow:hidden;border:1px solid rgb(203,213,225)}@media (max-width:768px){.st-math-card{margin-bottom:15px;border-radius:8px}.st-math-q{padding:15px;font-size:1.05rem}.st-math-ans{padding:15px;font-size:0.95rem}.st-calc-step{padding:12px;border-left-width:2px}}.solution-container .MathJax_Display{overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;padding-bottom:6px;box-sizing:border-box;line-height:normal}.solution-container{overflow-x:hidden}#MathJax_Message{display:none!important}span.MathJax{pointer-events:none}.sol-badge{display:inline-block;background:#2563eb;color:#fff;padding:4px 14px;border-radius:20px;font-size:.85rem;font-weight:700;letter-spacing:.5px;box-shadow:0 1px 2px rgba(0,0,0,.12);margin-bottom:1rem}.solution-container .MathJax_Display{overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;padding-bottom:6px;box-sizing:border-box;line-height:normal}.solution-container{overflow-x:hidden}#MathJax_Message{display:none!important}span.MathJax{pointer-events:none}.solution-container,.solution-container *{box-sizing:border-box}html,body{max-width:100%}.solution-container{width:100%;max-width:100%;min-width:0}.solution-container p,.solution-container h1,.solution-container h2,.solution-container h3,.solution-container h4,.solution-container h5,.solution-container h6,.solution-container li{overflow-wrap:anywhere}.solution-container .stat-table-wrapper{width:100%;max-width:100%;min-width:0}.solution-container .stat-table{width:100%;max-width:100%;border-collapse:collapse}@media(max-width:900px){.solution-container .stat-table-wrapper{overflow-x:hidden}.solution-container .stat-table.is-overflowing{table-layout:fixed;width:100%!important;font-size:var(--fit-font-size,12px)!important}.solution-container .stat-table.is-overflowing th,.solution-container .stat-table.is-overflowing td{padding:var(--fit-cell-padding,4px)!important;white-space:normal!important;overflow-wrap:anywhere;word-break:normal;min-width:0;line-height:1.4}}.solution-container .MathJax_Display{max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;box-sizing:border-box}</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js"],
+    TeX: { extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js", "cancel.js"] },
+    tex2jax: { inlineMath: [["$", "$"], ["\\(", "\\)"]], displayMath: [["$$", "$$"], ["\\[", "\\]"]], processEscapes: true, skipTags: ["script", "noscript", "style", "textarea", "pre", "code"] },
+    "HTML-CSS": { availableFonts: ["TeX"], preferredFont: "TeX", webFont: "TeX", mtextFontInherit: true, linebreaks: { automatic: false, width: "container" } },
+    showMathMenu: false, messageStyle: "none", skipStartupTypeset: true
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+<div class="solution-container"><div class="st-math-card">
+        <div class="st-math-q">1. ছক কাগজ থেকে ঘরগুনে ক্ষেত্রফল নির্ণয়ের চেষ্টা করি। (ছক কাগজে বিভিন্ন ক্ষেত্রের আকারগুলি দেখি ও ফাঁকা ঘর পূরণ করি)</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p class="text-muted mb-3"><i>[ছক কাগজের ক্ষুদ্রতম ১টি বাহুর দৈর্ঘ্য ১ সেমি ধরে ১টি ঘরের ক্ষেত্রফল = ১ বর্গসেমি.। ঘর গুনে ক্ষেত্রফল নির্ণয় করা হলো:]</i></p>
+                <div class="table-responsive">
+                    <table class="table table-bordered text-center align-middle">
+                        <thead>
+                            <tr>
+                                <th>আকার</th>
+                                <th>মোট ক্ষেত্রফল (প্রায়)</th>
+                                <th>যুক্তি / হিসাব</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold">1</td>
+                                <td>$\color{#059669}{\mathbf{4}}$ বর্গসেমি.</td>
+                                <td>এটি একটি বর্গক্ষেত্র (২ $\times$ ২)। মোট সম্পূর্ণ ঘর ৪টি।</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">2</td>
+                                <td>$\color{#059669}{\mathbf{6}}$ বর্গসেমি.</td>
+                                <td>এটি একটি আয়তক্ষেত্র (৩ $\times$ ২)। মোট সম্পূর্ণ ঘর ৬টি।</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">3</td>
+                                <td>$\color{#059669}{\mathbf{6}}$ বর্গসেমি.</td>
+                                <td>সামান্তরিকের ভূমি ২ একক, উচ্চতা ৩ একক। ক্ষেত্রফল = ২ $\times$ ৩ = ৬।</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">4</td>
+                                <td>$\color{#059669}{\mathbf{5}}$ বর্গসেমি.</td>
+                                <td>ট্রাপিজিয়ামের ক্ষেত্রফল = $\frac{1}{2} \times (2+3) \times 2 = 5$।</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">5</td>
+                                <td>$\color{#059669}{\mathbf{7}}$ বর্গসেমি. (প্রায়)</td>
+                                <td>অনিয়মিত চতুর্ভুজ। ঘর গুনে প্রায় ৭ বর্গসেমি পাওয়া যায়।</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">6</td>
+                                <td>$\color{#059669}{\mathbf{3}}$ বর্গসেমি.</td>
+                                <td>ত্রিভুজের ভূমি ৩, উচ্চতা ২। ক্ষেত্রফল = $\frac{1}{2} \times 3 \times 2 = 3$।</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">7</td>
+                                <td>$\color{#059669}{\mathbf{8}}$ বর্গসেমি.</td>
+                                <td>রম্বসের কর্ণদ্বয় ৪ এবং ৪। ক্ষেত্রফল = $\frac{1}{2} \times 4 \times 4 = 8$।</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">8</td>
+                                <td>$\color{#059669}{\mathbf{6}}$ বর্গসেমি.</td>
+                                <td>ত্রিভুজের ভূমি ৩, উচ্চতা ৪। ক্ষেত্রফল = $\frac{1}{2} \times 3 \times 4 = 6$।</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">9</td>
+                                <td>$\color{#059669}{\mathbf{7}}$ বর্গসেমি. (প্রায়)</td>
+                                <td>বক্ররেখা দ্বারা আবদ্ধ ক্ষেত্র। ঘর গুনে প্রায় ৭ বর্গসেমি হয়।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">2. মনে মনে হিসাব করে লিখি: <br>(i) যে বর্গাকার চিত্রের একটি বাহুর দৈর্ঘ্য 4 সেমি. তার পরিসীমা কত হবে হিসাব করি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>বর্গাকার চিত্রের একটি বাহুর দৈর্ঘ্য = $4$ সেমি.</p>
+                <p>আমরা জানি, বর্গক্ষেত্রের পরিসীমা = $4 \times$ বাহুর দৈর্ঘ্য</p>
+                <p>$\therefore$ পরিসীমা $= 4 \times 4$ সেমি. $= 16$ সেমি.</p>
+                <div class="mt-3"><strong>উত্তর:</strong> পরিসীমা $\color{#059669}{\mathbf{\boxed{16}}}$ <strong>সেমি.</strong>।</div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">2. (ii) একটি বর্গক্ষেত্রাকার জমির পরিসীমা 20 মিটার। তার ক্ষেত্রফল হিসাব করে লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>বর্গক্ষেত্রাকার জমির পরিসীমা = $20$ মিটার।</p>
+                <p>আমরা জানি, বর্গক্ষেত্রের বাহুর দৈর্ঘ্য = $\frac{\text{পরিসীমা}}{4}$</p>
+                <p>$\therefore$ বাহুর দৈর্ঘ্য = $\frac{20}{4}$ মিটার = $5$ মিটার।</p>
+                <p>ক্ষেত্রফল = $(\text{বাহুর দৈর্ঘ্য})^2$ = $(5)^2$ বর্গমিটার = $25$ বর্গমিটার।</p>
+                <div class="mt-3"><strong>উত্তর:</strong> জমিটার ক্ষেত্রফল $\color{#059669}{\mathbf{\boxed{25}}}$ <strong>বর্গমিটার</strong>।</div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">2. (iii) আয়তক্ষেত্রের দৈর্ঘ্য 8 সেমি. ও প্রস্থ 5 সেমি. হলে, আয়তক্ষেত্রের ক্ষেত্রফল কত হবে লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>আয়তক্ষেত্রের দৈর্ঘ্য = $8$ সেমি.</p>
+                <p>আয়তক্ষেত্রের প্রস্থ = $5$ সেমি.</p>
+                <p>আমরা জানি, আয়তক্ষেত্রের ক্ষেত্রফল = (দৈর্ঘ্য $\times$ প্রস্থ)</p>
+                <p>$\therefore$ ক্ষেত্রফল $= 8 \times 5$ বর্গসেমি. $= 40$ বর্গসেমি.</p>
+                <div class="mt-3"><strong>উত্তর:</strong> আয়তক্ষেত্রের ক্ষেত্রফল $\color{#059669}{\mathbf{\boxed{40}}}$ <strong>বর্গসেমি.</strong>।</div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">2. (iv) 1 বর্গকিমি. = $\square$ বর্গডেকামি. <br>2. (v) 1 বর্গমিটার = $\square$ বর্গহেক্টোমি.</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p class="fw-bold text-primary mb-2">(iv)</p>
+                <p>আমরা জানি, 1 কিমি. = 100 ডেকামি.</p>
+                <p>$\therefore$ 1 বর্গকিমি. = $(100 \times 100)$ বর্গডেকামি. = $10000$ বর্গডেকামি.</p>
+                <div class="mt-2"><strong>উত্তর:</strong> 1 বর্গকিমি. = $\color{#059669}{\mathbf{\boxed{10000}}}$ বর্গডেকামি.</div>
+                
+                <hr class="my-3">
+                <p class="fw-bold text-primary mb-2">(v)</p>
+                <p>আমরা জানি, 1 মিটার = 0.01 হেক্টোমিটার</p>
+                <p>$\therefore$ 1 বর্গমিটার = $(0.01 \times 0.01)$ বর্গহেক্টোমি. = $0.0001$ বর্গহেক্টোমি.</p>
+                <div class="mt-2"><strong>উত্তর:</strong> 1 বর্গমিটার = $\color{#059669}{\mathbf{\boxed{0.0001}}}$ বর্গহেক্টোমি.</div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">2. (vi) 5 বর্গমিটার ও 5 মিটার বর্গ বলতে কী বুঝি তা লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <ul>
+                    <li><strong>5 বর্গমিটার:</strong> 5 বর্গমিটার বলতে এমন যেকোনো একটি ক্ষেত্রকে বোঝায় যার ক্ষেত্রফল 5 বর্গমিটার। (যেমন 5 মি. লম্বা ও 1 মি. চওড়া আয়তক্ষেত্র)।</li>
+                    <li><strong>5 মিটার বর্গ:</strong> 5 মিটার বর্গ বলতে এমন একটি <strong>বর্গক্ষেত্রকে</strong> বোঝায় যার প্রতিটি বাহুর দৈর্ঘ্য 5 মিটার। এর ক্ষেত্রফল হবে = $(5 \times 5)$ বর্গমিটার = 25 বর্গমিটার।</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">2. (vii) একটি বর্গক্ষেত্রের ক্ষেত্রফল 2 সেন্টিমিটার বর্গ হলে এর একটি বাহুর দৈর্ঘ্য $\square$ সেন্টিমিটার।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p class="text-muted mb-2"><i>[লক্ষ করো: প্রশ্নে "2 সেন্টিমিটার বর্গ" বলা হয়েছে, যার অর্থ এটি এমন একটি বর্গক্ষেত্র যার বাহুর দৈর্ঘ্য 2 সেন্টিমিটার।]</i></p>
+                <p>যেহেতু এটি 2 সেন্টিমিটার বর্গ, তাই এর একটি বাহুর দৈর্ঘ্য 2 সেন্টিমিটার হবে।</p>
+                <div class="mt-3"><strong>উত্তর:</strong> বাহুর দৈর্ঘ্য $\color{#059669}{\mathbf{\boxed{2}}}$ <strong>সেন্টিমিটার</strong>।</div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">2. (viii) একটি আয়তক্ষেত্র আঁকি যার ক্ষেত্রফল 30 বর্গসেমি.। হিসাব করে দেখি এই আয়তক্ষেত্রের দৈর্ঘ্য ও প্রস্থ কী কী নিতে পারি। কিন্তু যদি 40 বর্গসেমি. ক্ষেত্রফল বিশিষ্ট আয়তক্ষেত্র হয় তার দৈর্ঘ্য ও প্রস্থ কী কী নিতে পারি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p class="fw-bold text-primary mb-2">30 বর্গসেমি. ক্ষেত্রফলের জন্য:</p>
+                <p>আয়তক্ষেত্রের ক্ষেত্রফল = দৈর্ঘ্য $\times$ প্রস্থ = 30</p>
+                <p>সম্ভাব্য দৈর্ঘ্য ও প্রস্থের জোড়গুলি হতে পারে:</p>
+                <ul class="mb-3">
+                    <li>30 সেমি. ও 1 সেমি.</li>
+                    <li>15 সেমি. ও 2 সেমি.</li>
+                    <li>10 সেমি. ও 3 সেমি.</li>
+                    <li>6 সেমি. ও 5 সেমি.</li>
+                </ul>
+                
+                <hr class="my-3">
+                <p class="fw-bold text-primary mb-2">40 বর্গসেমি. ক্ষেত্রফলের জন্য:</p>
+                <p>আয়তক্ষেত্রের ক্ষেত্রফল = দৈর্ঘ্য $\times$ প্রস্থ = 40</p>
+                <p>সম্ভাব্য দৈর্ঘ্য ও প্রস্থের জোড়গুলি হতে পারে:</p>
+                <ul>
+                    <li>40 সেমি. ও 1 সেমি.</li>
+                    <li>20 সেমি. ও 2 সেমি.</li>
+                    <li>10 সেমি. ও 4 সেমি.</li>
+                    <li>8 সেমি. ও 5 সেমি.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">2. (ix) মিহির একটি পিচবোর্ডের বর্গক্ষেত্রাকার কার্ড তৈরি করেছে যার একটি বাহুর দৈর্ঘ্য 6 সেমি.। এই কার্ডের ক্ষেত্রফল কত হবে হিসাব করে লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>বর্গক্ষেত্রাকার কার্ডের একটি বাহুর দৈর্ঘ্য = $6$ সেমি.</p>
+                <p>আমরা জানি, বর্গক্ষেত্রের ক্ষেত্রফল = $(\text{বাহুর দৈর্ঘ্য})^2$</p>
+                <p>$\therefore$ কার্ডটির ক্ষেত্রফল = $(6 \times 6)$ বর্গসেমি. = $36$ বর্গসেমি.</p>
+                <div class="mt-3"><strong>উত্তর:</strong> কার্ডের ক্ষেত্রফল $\color{#059669}{\mathbf{\boxed{36}}}$ <strong>বর্গসেমি.</strong>।</div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">2. (x) 5 মিটার বর্গের ক্ষেত্রফল $\square$ বর্গমিটার। (ফাঁকা ঘরে বসাই)</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>আমরা জানি, "5 মিটার বর্গ" বলতে এমন একটি বর্গক্ষেত্রকে বোঝায় যার বাহুর দৈর্ঘ্য 5 মিটার।</p>
+                <p>$\therefore$ ক্ষেত্রফল = $(5 \times 5)$ বর্গমিটার = $25$ বর্গমিটার।</p>
+                <div class="mt-3"><strong>উত্তর:</strong> 5 মিটার বর্গের ক্ষেত্রফল $\color{#059669}{\mathbf{\boxed{25}}}$ <strong>বর্গমিটার</strong>।</div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">3. আমি একটি সাদা আয়তাকার কাগজে পাশের ছবির মতো দুটি ছবি এঁকেছি। <br>(a) 1 নং ছবি সাদা কাগজের কতটা জায়গা জুড়ে আছে হিসাব করি। <br>(b) 2 নং ছবি সাদা কাগজের কতটা জায়গা জুড়ে আছে হিসাব করি। <br>(c) 1 নং ও 2 নং ছবি আঁকার পরে আমার সাদা কাগজে আর কতটা সাদা জায়গা পড়ে রইল হিসাব করে লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p class="text-muted mb-2"><i>[বইয়ের চিত্রানুযায়ী, 1 নং ছবিটি 8 সেমি. বাহুবিশিষ্ট বর্গাকার এবং 2 নং ছবিটি 10 সেমি. $\times$ 6 সেমি. মাপের আয়তাকার। সাদা কাগজের মাপ 32 সেমি. $\times$ 20 সেমি.]</i></p>
+                
+                <p class="mt-3"><strong>(a)</strong> 1 নং ছবিটি একটি বর্গক্ষেত্র যার বাহু 8 সেমি.</p>
+                <p>$\therefore$ 1 নং ছবির ক্ষেত্রফল = $(8 \times 8)$ বর্গসেমি. = $\color{#059669}{\mathbf{64}}$ <strong>বর্গসেমি.</strong>।</p>
+                
+                <p class="mt-3"><strong>(b)</strong> 2 নং ছবিটি একটি আয়তক্ষেত্র যার দৈর্ঘ্য 10 সেমি. ও প্রস্থ 6 সেমি.</p>
+                <p>$\therefore$ 2 নং ছবির ক্ষেত্রফল = $(10 \times 6)$ বর্গসেমি. = $\color{#059669}{\mathbf{60}}$ <strong>বর্গসেমি.</strong>।</p>
+                
+                <p class="mt-3"><strong>(c)</strong> সাদা আয়তাকার কাগজের দৈর্ঘ্য = 32 সেমি. এবং প্রস্থ = 20 সেমি.</p>
+                <p>সাদা কাগজের মোট ক্ষেত্রফল = $(32 \times 20)$ বর্গসেমি. = $640$ বর্গসেমি.</p>
+                <p>ছবি দুটির মোট ক্ষেত্রফল = $(64 + 60)$ বর্গসেমি. = $124$ বর্গসেমি.</p>
+                <p>$\therefore$ সাদা জায়গা পড়ে রইল = $(640 - 124)$ বর্গসেমি. = $\color{#059669}{\mathbf{516}}$ <strong>বর্গসেমি.</strong>।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">4. আমার খাতার একটি পাতা 15 সেমি. লম্বা ও 12 সেমি. চওড়া। চারপাশে 2 সেমি. চওড়া মার্জিন দিয়ে বাকি অংশে লিখলাম। <br>যে অংশে লিখলাম তার ক্ষেত্রফল হিসাব করে লিখি। <br>যে অংশে লিখলাম না তার ক্ষেত্রফল কত হিসাব করে লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>খাতার পাতার দৈর্ঘ্য = 15 সেমি. এবং প্রস্থ = 12 সেমি.</p>
+                <p>খাতার পাতার মোট ক্ষেত্রফল = $(15 \times 12)$ বর্গসেমি. = 180 বর্গসেমি.</p>
+                
+                <p class="mt-3">চারপাশে 2 সেমি. চওড়া মার্জিন দেওয়া হয়েছে।</p>
+                <p>অতএব, মার্জিন বাদে লেখার অংশের দৈর্ঘ্য = $15 - (2 \times 2)$ সেমি. = $15 - 4$ সেমি. = 11 সেমি.</p>
+                <p>মার্জিন বাদে লেখার অংশের প্রস্থ = $12 - (2 \times 2)$ সেমি. = $12 - 4$ সেমি. = 8 সেমি.</p>
+                
+                <p class="mt-3">$\therefore$ যে অংশে লিখলাম তার ক্ষেত্রফল = $(11 \times 8)$ বর্গসেমি. = $\color{#059669}{\mathbf{88}}$ <strong>বর্গসেমি.</strong>।</p>
+                
+                <p class="mt-3">$\therefore$ যে অংশে লিখলাম না (মার্জিনের অংশ) তার ক্ষেত্রফল = (মোট ক্ষেত্রফল - লেখার অংশের ক্ষেত্রফল)</p>
+                <p>$= (180 - 88)$ বর্গসেমি. = $\color{#059669}{\mathbf{92}}$ <strong>বর্গসেমি.</strong>।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">5. রাজেশের একটি আয়তক্ষেত্রাকার জমির দৈর্ঘ্য 36 মিটার ও প্রস্থ 24 মিটার। তার আয়তক্ষেত্রাকার জমির বাইরের চারপাশে 2 মিটার চওড়া রাস্তা আছে। <br>(i) রাস্তাসহ আয়তক্ষেত্রাকার জমির দৈর্ঘ্য ও প্রস্থ কত। <br>(ii) রাস্তাবাদে আয়তক্ষেত্রাকার জমির ক্ষেত্রফল কত। <br>(iii) রাস্তার ক্ষেত্রফল কত?</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>রাস্তাবাদে জমির (ভেতরের অংশ) দৈর্ঘ্য = 36 মিটার এবং প্রস্থ = 24 মিটার।</p>
+                
+                <p class="mt-3"><strong>(i)</strong> যেহেতু জমির বাইরের চারপাশে 2 মিটার চওড়া রাস্তা আছে,</p>
+                <p>রাস্তাসহ জমির দৈর্ঘ্য = $36 + (2 \times 2)$ মিটার = $36 + 4$ মিটার = $\color{#059669}{\mathbf{40}}$ <strong>মিটার</strong>।</p>
+                <p>রাস্তাসহ জমির প্রস্থ = $24 + (2 \times 2)$ মিটার = $24 + 4$ মিটার = $\color{#059669}{\mathbf{28}}$ <strong>মিটার</strong>।</p>
+                
+                <p class="mt-3"><strong>(ii)</strong> রাস্তাবাদে আয়তক্ষেত্রাকার জমির ক্ষেত্রফল = (ভেতরের দৈর্ঘ্য $\times$ ভেতরের প্রস্থ)</p>
+                <p>$= (36 \times 24)$ বর্গমিটার = $\color{#059669}{\mathbf{864}}$ <strong>বর্গমিটার</strong>।</p>
+                
+                <p class="mt-3"><strong>(iii)</strong> রাস্তাসহ জমির মোট ক্ষেত্রফল = $(40 \times 28)$ বর্গমিটার = 1120 বর্গমিটার।</p>
+                <p>$\therefore$ রাস্তার ক্ষেত্রফল = (রাস্তাসহ মোট ক্ষেত্রফল - রাস্তাবাদে জমির ক্ষেত্রফল)</p>
+                <p>$= (1120 - 864)$ বর্গমিটার = $\color{#059669}{\mathbf{256}}$ <strong>বর্গমিটার</strong>।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">6. মারিয়াদের 20 মি. দীর্ঘ বাহুবিশিষ্ট বর্গক্ষেত্রাকার জমির বাইরের চারদিকে 1 মিটার চওড়া একটি রাস্তা আছে। হিসাব করে এই রাস্তার ক্ষেত্রফল লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>রাস্তাবাদে বর্গাকার জমির একটি বাহুর দৈর্ঘ্য = 20 মিটার।</p>
+                <p>রাস্তাবাদে জমির ক্ষেত্রফল = $(20 \times 20)$ বর্গমিটার = 400 বর্গমিটার।</p>
+                
+                <p class="mt-3">জমির বাইরের চারদিকে 1 মিটার চওড়া রাস্তা আছে।</p>
+                <p>$\therefore$ রাস্তাসহ জমির একটি বাহুর দৈর্ঘ্য = $20 + (1 \times 2)$ মিটার = $20 + 2$ মিটার = 22 মিটার।</p>
+                <p>রাস্তাসহ জমির মোট ক্ষেত্রফল = $(22 \times 22)$ বর্গমিটার = 484 বর্গমিটার।</p>
+                
+                <p class="mt-3">$\therefore$ রাস্তার ক্ষেত্রফল = (রাস্তাসহ মোট ক্ষেত্রফল - রাস্তাবাদে জমির ক্ষেত্রফল)</p>
+                <p>$= (484 - 400)$ বর্গমিটার = $84$ বর্গমিটার।</p>
+                <div class="mt-3"><strong>উত্তর:</strong> রাস্তার ক্ষেত্রফল $\color{#059669}{\mathbf{\boxed{84}}}$ <strong>বর্গমিটার</strong>।</div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">7. একটি বর্গক্ষেত্রাকার জমির ক্ষেত্রফল 6400 বর্গমিটার। প্রতি মিটারে 3.50 টাকা খরচ করে ওই জমির চারদিকে বেড়া দিতে মোট কত টাকা খরচ হবে হিসাব করে লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>বর্গক্ষেত্রাকার জমির ক্ষেত্রফল = 6400 বর্গমিটার।</p>
+                <p>আমরা জানি, বর্গক্ষেত্রের বাহুর দৈর্ঘ্য = $\sqrt{\text{ক্ষেত্রফল}}$</p>
+                <p>$\therefore$ জমিটার বাহুর দৈর্ঘ্য = $\sqrt{6400}$ মিটার = 80 মিটার।</p>
+                
+                <p class="mt-3">চারদিকে বেড়া দেওয়া মানে পরিসীমা বরাবর বেড়া দেওয়া।</p>
+                <p>জমির পরিসীমা = $4 \times$ বাহুর দৈর্ঘ্য = $4 \times 80$ মিটার = 320 মিটার।</p>
+                
+                <p class="mt-3">প্রতি মিটারে বেড়া দিতে খরচ হয় 3.50 টাকা।</p>
+                <p>$\therefore$ মোট খরচ হবে = $(320 \times 3.50)$ টাকা = $1120$ টাকা।</p>
+                <div class="mt-3"><strong>উত্তর:</strong> বেড়া দিতে মোট $\color{#059669}{\mathbf{\boxed{1120}}}$ <strong>টাকা</strong> খরচ হবে।</div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">8. করিমচাচার আয়তক্ষেত্রাকার জমির দৈর্ঘ্য প্রস্থের 2 গুণ এবং এই জমির ক্ষেত্রফল 578 বর্গমিটার। করিমচাচার জমিটির দৈর্ঘ্য, প্রস্থ ও পরিসীমা কত হিসেব করে দেখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>ধরি, জমিটির প্রস্থ = $x$ মিটার।</p>
+                <p>যেহেতু দৈর্ঘ্য প্রস্থের 2 গুণ, তাই দৈর্ঘ্য = $2x$ মিটার।</p>
+                
+                <p class="mt-3">প্রশ্নানুসারে, জমির ক্ষেত্রফল = 578 বর্গমিটার</p>
+                <p>বা, $\text{দৈর্ঘ্য} \times \text{প্রস্থ} = 578$</p>
+                <p>বা, $2x \times x = 578$</p>
+                <p>বা, $2x^2 = 578$</p>
+                <p>বা, $x^2 = \frac{578}{2} = 289$</p>
+                <p>বা, $x = \sqrt{289} = 17$</p>
+                
+                <p class="mt-3">$\therefore$ জমিটির প্রস্থ = $\color{#059669}{\mathbf{17}}$ <strong>মিটার</strong>।</p>
+                <p>জমিটির দৈর্ঘ্য = $2 \times 17$ মিটার = $\color{#059669}{\mathbf{34}}$ <strong>মিটার</strong>।</p>
+                
+                <p class="mt-3">জমিটির পরিসীমা = $2 \times (\text{দৈর্ঘ্য} + \text{প্রস্থ})$</p>
+                <p>$= 2 \times (34 + 17)$ মিটার</p>
+                <p>$= 2 \times 51$ মিটার = $\color{#059669}{\mathbf{102}}$ <strong>মিটার</strong>।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">9. একটি আয়তক্ষেত্রাকার অভিনয় মঞ্চের দৈর্ঘ্য প্রস্থের দ্বিগুণ। গোটা মঞ্চকে ত্রিপল দিয়ে ঢাকা দিতে 6,048 টাকা খরচ হয়। প্রতি বর্গমিটার ত্রিপলের দাম 21 টাকা হলে মঞ্চটির দৈর্ঘ্য ও প্রস্থ কত হিসাব করি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>প্রতি বর্গমিটার ত্রিপলের দাম = 21 টাকা।</p>
+                <p>মঞ্চকে ত্রিপল দিয়ে ঢাকা দিতে মোট খরচ হয় = 6048 টাকা।</p>
+                <p>$\therefore$ মঞ্চটির ক্ষেত্রফল = $\frac{\text{মোট খরচ}}{\text{প্রতি বর্গমিটারের দাম}}$ = $\frac{6048}{21}$ বর্গমিটার = 288 বর্গমিটার।</p>
+                
+                <p class="mt-3">ধরি, মঞ্চটির প্রস্থ = $x$ মিটার।</p>
+                <p>যেহেতু দৈর্ঘ্য প্রস্থের দ্বিগুণ, তাই দৈর্ঘ্য = $2x$ মিটার।</p>
+                
+                <p class="mt-3">প্রশ্নানুসারে, ক্ষেত্রফল = 288</p>
+                <p>বা, $2x \times x = 288$</p>
+                <p>বা, $2x^2 = 288$</p>
+                <p>বা, $x^2 = \frac{288}{2} = 144$</p>
+                <p>বা, $x = \sqrt{144} = 12$</p>
+                
+                <p class="mt-3">$\therefore$ মঞ্চটির প্রস্থ = $\color{#059669}{\mathbf{12}}$ <strong>মিটার</strong>।</p>
+                <p>মঞ্চটির দৈর্ঘ্য = $2 \times 12$ মিটার = $\color{#059669}{\mathbf{24}}$ <strong>মিটার</strong>।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">10. নাজরিন তার 5.5 মিটার লম্বা ও 1.25 মিটার চওড়া শাড়িতে দৈর্ঘ্য বরাবর 2.5 সেমি. চওড়া জড়ির পাড় বসাবে এবং চওড়ার দিক বরাবর 5 সেমি. চওড়া জড়ির পাড় লাগাবে। শাড়িতে কত ক্ষেত্রফল জুড়ে জড়ি থাকবে হিসাব করি। জড়ি ছাড়া শাড়ির ক্ষেত্রফল কত হিসাব করি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>শাড়ির মোট দৈর্ঘ্য = 5.5 মিটার = 550 সেমি.</p>
+                <p>শাড়ির মোট চওড়া (প্রস্থ) = 1.25 মিটার = 125 সেমি.</p>
+                <p>শাড়ির মোট ক্ষেত্রফল = $(550 \times 125)$ বর্গসেমি. = 68750 বর্গসেমি.</p>
+                
+                <p class="mt-3">দৈর্ঘ্য বরাবর 2.5 সেমি. চওড়া জড়ির পাড় অর্থাৎ শাড়ির দুই পাশে দৈর্ঘ্যের দিকে 2.5 সেমি. পাড় আছে।</p>
+                <p>চওড়ার দিক বরাবর 5 সেমি. চওড়া জড়ির পাড় অর্থাৎ শাড়ির দুই প্রান্তে প্রস্থের দিকে 5 সেমি. পাড় আছে।</p>
+                
+                <p class="mt-3"><strong>জড়ি বাদে শাড়ির ভেতরের অংশের মাপ:</strong></p>
+                <p>জড়ি বাদে দৈর্ঘ্য = $550 - (5 \times 2)$ সেমি. = $550 - 10$ সেমি. = 540 সেমি.</p>
+                <p>জড়ি বাদে প্রস্থ = $125 - (2.5 \times 2)$ সেমি. = $125 - 5$ সেমি. = 120 সেমি.</p>
+                <p>$\therefore$ জড়ি ছাড়া শাড়ির ক্ষেত্রফল = $(540 \times 120)$ বর্গসেমি. = $64800$ বর্গসেমি.</p>
+                
+                <p class="mt-3"><strong>জড়ির ক্ষেত্রফল:</strong></p>
+                <p>জড়ির ক্ষেত্রফল = (শাড়ির মোট ক্ষেত্রফল - জড়ি বাদে শাড়ির ক্ষেত্রফল)</p>
+                <p>$= (68750 - 64800)$ বর্গসেমি. = $3950$ বর্গসেমি.</p>
+                
+                <hr class="my-3">
+                <p class="text-muted"><i>[বর্গমিটারে প্রকাশ করলে: 1 বর্গমিটার = 10000 বর্গসেমি.]</i></p>
+                <p>শাড়িতে জড়ি থাকবে = $\frac{3950}{10000}$ বর্গমিটার = $\color{#059669}{\mathbf{0.395}}$ <strong>বর্গমিটার</strong>।</p>
+                <p>জড়ি ছাড়া শাড়ির ক্ষেত্রফল = $\frac{64800}{10000}$ বর্গমিটার = $\color{#059669}{\mathbf{6.48}}$ <strong>বর্গমিটার</strong>।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">11. 5 মিটার চওড়া দুটি রাস্তা আয়তক্ষেত্রাকার বাগানকে সমান চারটি খণ্ডে ভাগ করেছে। এই আয়তক্ষেত্রাকার বাগানের দৈর্ঘ্য 60 মিটার ও প্রস্থ 40 মিটার। প্রতি বর্গমিটারে 80 টাকা খরচ হলে রাস্তা তৈরি করতে মোট কত খরচ পড়বে হিসাব করি। প্রতি খণ্ড জমির ক্ষেত্রফল কত হিসাব করে লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>বাগানের মোট দৈর্ঘ্য = 60 মিটার এবং প্রস্থ = 40 মিটার।</p>
+                <p>বাগানের মোট ক্ষেত্রফল = $(60 \times 40)$ বর্গমিটার = 2400 বর্গমিটার।</p>
+                
+                <p class="mt-3">রাস্তা দুটি 5 মিটার চওড়া এবং তারা পরস্পরকে আড়াআড়িভাবে ছেদ করেছে।</p>
+                <p>দৈর্ঘ্যের সমান্তরাল রাস্তার ক্ষেত্রফল = $(60 \times 5)$ বর্গমিটার = 300 বর্গমিটার।</p>
+                <p>প্রস্থের সমান্তরাল রাস্তার ক্ষেত্রফল = $(40 \times 5)$ বর্গমিটার = 200 বর্গমিটার।</p>
+                <p>রাস্তা দুটির সংযোগস্থলের (মাঝখানের সাধারণ অংশ) ক্ষেত্রফল = $(5 \times 5)$ বর্গমিটার = 25 বর্গমিটার।</p>
+                
+                <p class="mt-3">$\therefore$ রাস্তার মোট ক্ষেত্রফল = $(300 + 200 - 25)$ বর্গমিটার = 475 বর্গমিটার।</p>
+                <p>প্রতি বর্গমিটারে 80 টাকা হিসাবে রাস্তা তৈরি করতে খরচ হবে = $(475 \times 80)$ টাকা = $\color{#059669}{\mathbf{38000}}$ <strong>টাকা</strong>।</p>
+                
+                <hr class="my-3">
+                <p>রাস্তা বাদে বাগানের বাকি অংশের ক্ষেত্রফল = $(2400 - 475)$ বর্গমিটার = 1925 বর্গমিটার।</p>
+                <p>রাস্তাটি বাগানটিকে সমান ৪টি খণ্ডে ভাগ করেছে।</p>
+                <p>$\therefore$ প্রতি খণ্ড জমির ক্ষেত্রফল = $\frac{1925}{4}$ বর্গমিটার = $\color{#059669}{\mathbf{481.25}}$ <strong>বর্গমিটার</strong>।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">12. আমাদের বাড়ি থেকে রাস্তায় ওঠার পথটি 2 মিটার চওড়া। পথটি বাড়ির সামনের বাগানকে পাশের ছবির মতো দুটি সমান বর্গক্ষেত্রাকার খণ্ডে ভাগ করেছে। প্রতি বর্গমিটার 500 টাকা হিসাবে পথটি তৈরি করতে 8000 টাকা খরচ হয়েছে। বাগানের এক একটি বর্গাকার খণ্ডের ক্ষেত্রফল কত হিসাব করে লিখি। বাড়িটি আয়তক্ষেত্রাকার জায়গার উপর তৈরি। আয়তক্ষেত্রাকার জায়গার প্রস্থ 4 মিটার হলে বাড়িটি কত বর্গমিটার জায়গা নিয়ে আছে হিসাব করে লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>প্রতি বর্গমিটারে 500 টাকা হিসাবে পথ তৈরি করতে মোট খরচ হয়েছে 8000 টাকা।</p>
+                <p>$\therefore$ পথটির ক্ষেত্রফল = $\frac{8000}{500}$ বর্গমিটার = 16 বর্গমিটার।</p>
+                
+                <p class="mt-3">পথটি 2 মিটার চওড়া।</p>
+                <p>$\therefore$ পথটির দৈর্ঘ্য = $\frac{\text{ক্ষেত্রফল}}{\text{চওড়া}}$ = $\frac{16}{2}$ মিটার = 8 মিটার।</p>
+                
+                <p class="mt-3">যেহেতু পথটি বাগানকে দুটি সমান <strong>বর্গক্ষেত্রাকার খণ্ডে</strong> ভাগ করেছে, তাই বর্গাকার খণ্ডগুলির একটি বাহুর দৈর্ঘ্য হবে পথটির দৈর্ঘ্যের সমান, অর্থাৎ 8 মিটার।</p>
+                <p>$\therefore$ বাগানের এক একটি বর্গাকার খণ্ডের ক্ষেত্রফল = $(8 \times 8)$ বর্গমিটার = $\color{#059669}{\mathbf{64}}$ <strong>বর্গমিটার</strong>।</p>
+                
+                <hr class="my-3">
+                <p>বাড়িটি আয়তক্ষেত্রাকার জায়গার উপর তৈরি এবং ছবির অনুযায়ী বাড়িটি বাগানের সম্পূর্ণ দৈর্ঘ্য জুড়ে অবস্থিত।</p>
+                <p>বাগানের মোট দৈর্ঘ্য = (১ম বর্গাকার খণ্ডের বাহু + পথের চওড়া + ২য় বর্গাকার খণ্ডের বাহু)</p>
+                <p>$= (8 + 2 + 8)$ মিটার = 18 মিটার।</p>
+                <p>অতএব, বাড়িটির দৈর্ঘ্য = 18 মিটার।</p>
+                <p>দেওয়া আছে, বাড়িটির প্রস্থ = 4 মিটার।</p>
+                <p>$\therefore$ বাড়িটি জায়গা নিয়ে আছে (বাড়িটির ক্ষেত্রফল) = $(18 \times 4)$ বর্গমিটার = $\color{#059669}{\mathbf{72}}$ <strong>বর্গমিটার</strong>।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">13. 30 মিটার দীর্ঘ একটি জমি চাষ করতে 150 টাকা খরচ হয়েছে। জমিটির প্রস্থ যদি 5 মিটার কম হতো তবে খরচ হতো 120 টাকা। জমিটির প্রস্থ হিসাব করে লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>ধরি, জমিটির প্রস্থ = $x$ মিটার।</p>
+                <p>জমিটির দৈর্ঘ্য = 30 মিটার।</p>
+                <p>$\therefore$ জমিটির ক্ষেত্রফল = $30x$ বর্গমিটার।</p>
+                <p>30x বর্গমিটার জমি চাষ করতে খরচ হয় 150 টাকা।</p>
+                <p>$\therefore$ 1 বর্গমিটার জমি চাষ করতে খরচ হয় = $\frac{150}{30x}$ টাকা = $\frac{5}{x}$ টাকা।</p>
+                
+                <p class="mt-3">যদি প্রস্থ 5 মিটার কম হতো, তবে নতুন প্রস্থ হতো = $(x - 5)$ মিটার।</p>
+                <p>তখন নতুন ক্ষেত্রফল হতো = $30(x - 5)$ বর্গমিটার।</p>
+                <p>এই নতুন ক্ষেত্রফল চাষ করতে খরচ হয় 120 টাকা।</p>
+                <p>$\therefore$ 1 বর্গমিটার চাষ করতে খরচ হয় = $\frac{120}{30(x - 5)}$ টাকা = $\frac{4}{x - 5}$ টাকা।</p>
+                
+                <p class="mt-3">যেহেতু প্রতি বর্গমিটারে চাষের খরচ সমান, তাই শর্তানুসারে:</p>
+                <p>$\frac{5}{x} = \frac{4}{x - 5}$</p>
+                <p>বা, $5(x - 5) = 4x$</p>
+                <p>বা, $5x - 25 = 4x$</p>
+                <p>বা, $5x - 4x = 25$</p>
+                <p>বা, $x = 25$</p>
+                <div class="mt-3"><strong>উত্তর:</strong> জমিটির প্রস্থ $\color{#059669}{\mathbf{\boxed{25}}}$ <strong>মিটার</strong>।</div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">14. একটি আয়তক্ষেত্রাকার হল ঘরের দৈর্ঘ্য 30 মিটার এবং প্রস্থ 18 মিটার। ঘরটির মেঝে বাঁধাতে 3 ডেসিমিটার বাহুবিশিষ্ট কতগুলি বর্গক্ষেত্রাকার টালি লাগবে হিসাব করি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>আয়তক্ষেত্রাকার হল ঘরের দৈর্ঘ্য = 30 মিটার = $30 \times 10$ ডেসিমিটার = 300 ডেসিমিটার।</p>
+                <p>হল ঘরের প্রস্থ = 18 মিটার = $18 \times 10$ ডেসিমিটার = 180 ডেসিমিটার।</p>
+                <p>$\therefore$ হল ঘরের মেঝের ক্ষেত্রফল = $(300 \times 180)$ বর্গডেসিমিটার = 54000 বর্গডেসিমিটার।</p>
+                
+                <p class="mt-3">প্রতিটি বর্গক্ষেত্রাকার টালির বাহুর দৈর্ঘ্য = 3 ডেসিমিটার।</p>
+                <p>$\therefore$ একটি টালির ক্ষেত্রফল = $(3 \times 3)$ বর্গডেসিমিটার = 9 বর্গডেসিমিটার।</p>
+                
+                <p class="mt-3">$\therefore$ মোট টালির প্রয়োজন = $\frac{\text{মেঝের মোট ক্ষেত্রফল}}{\text{একটি টালির ক্ষেত্রফল}}$</p>
+                <p>$= \frac{54000}{9}$ টি</p>
+                <p>$= 6000$ টি।</p>
+                <div class="mt-3"><strong>উত্তর:</strong> ঘরটির মেঝে বাঁধাতে $\color{#059669}{\mathbf{\boxed{6000}}}$ <strong>টি</strong> টালি লাগবে।</div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">15. জাকিরদের 18 মিটার $\times$ 14 মিটার একটি আয়তক্ষেত্রাকার জমি আছে। এই আয়তক্ষেত্রাকার জমির মধ্যে জাকিরদের 3.4 মিটার দৈর্ঘ্যের বর্গক্ষেত্রাকার ফুলের বাগান আছে। ফুলের বাগান বাদ দিয়ে ফাঁকা জমির ক্ষেত্রফল কত হিসাব করি। 2 ডেসিমিটার দৈর্ঘ্যের বর্গক্ষেত্রাকার টালি দিয়ে এই ফাঁকা জমি ঢাকতে কতগুলি টালি লাগবে হিসাব করে লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>জাকিরদের আয়তক্ষেত্রাকার জমির ক্ষেত্রফল = $(18 \times 14)$ বর্গমিটার = 252 বর্গমিটার।</p>
+                
+                <p class="mt-3">জমির মধ্যে 3.4 মিটার দৈর্ঘ্যের একটি বর্গক্ষেত্রাকার ফুলের বাগান আছে।</p>
+                <p>ফুলের বাগানের ক্ষেত্রফল = $(3.4 \times 3.4)$ বর্গমিটার = 11.56 বর্গমিটার।</p>
+                
+                <p class="mt-3">$\therefore$ ফুলের বাগান বাদ দিয়ে ফাঁকা জমির ক্ষেত্রফল = $(252 - 11.56)$ বর্গমিটার = $\color{#059669}{\mathbf{240.44}}$ <strong>বর্গমিটার</strong>।</p>
+                
+                <hr class="my-3">
+                <p>এই ফাঁকা জমিটি 2 ডেসিমিটার দৈর্ঘ্যের টালি দিয়ে ঢাকতে হবে।</p>
+                <p>ফাঁকা জমির ক্ষেত্রফল = 240.44 বর্গমিটার = $240.44 \times 100$ বর্গডেসিমিটার = 24044 বর্গডেসিমিটার।</p>
+                <p class="text-muted"><i>[যেহেতু 1 মিটার = 10 ডেসিমিটার, তাই 1 বর্গমিটার = 100 বর্গডেসিমিটার]</i></p>
+                
+                <p class="mt-2">একটি বর্গক্ষেত্রাকার টালির বাহুর দৈর্ঘ্য = 2 ডেসিমিটার।</p>
+                <p>$\therefore$ একটি টালির ক্ষেত্রফল = $(2 \times 2)$ বর্গডেসিমিটার = 4 বর্গডেসিমিটার।</p>
+                
+                <p class="mt-3">$\therefore$ প্রয়োজনীয় টালির সংখ্যা = $\frac{24044}{4}$ টি = $\color{#059669}{\mathbf{6011}}$ <strong>টি</strong>।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">16. ছবি দেখি ও রঙিন অংশের ক্ষেত্রফল মাপি।<br>
+        (i) প্রথম চিত্র: 20 সেমি $\times$ 15 সেমি আয়তক্ষেত্রের মধ্যে 2 সেমি চওড়া লাল ক্রস (Cross)।<br>
+        (ii) দ্বিতীয় চিত্র: 23 সেমি $\times$ 15 সেমি আয়তক্ষেত্রের ভেতরের দিকে 2 সেমি চওড়া বাদামী ফ্রেম।<br>
+        (iii) তৃতীয় চিত্র: 18 মি $\times$ 12 মি আয়তক্ষেত্রের মধ্যে এল-আকৃতির (L-shape) সবুজ অংশ। (সাদা অংশের উচ্চতা 9 মি, নিচের সবুজ অংশের চওড়া 4 মি)।<br>
+        (iv) চতুর্থ চিত্র: কমলা রঙের H আকৃতির ক্ষেত্রফল (যার বাম ও ডান দন্ডের উচ্চতা 10 সেমি, চওড়া 4 সেমি এবং মাঝের অংশের দৈর্ঘ্য 5 সেমি)।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p class="fw-bold text-primary mb-2">(i) প্রথম চিত্র (লাল ক্রস):</p>
+                <p>মোট আয়তক্ষেত্রের ক্ষেত্রফল = $(20 \times 15)$ বর্গসেমি = 300 বর্গসেমি।</p>
+                <p>লাল ক্রস বাদে সাদা অংশের দৈর্ঘ্য = $(20 - 2)$ সেমি = 18 সেমি এবং প্রস্থ = $(15 - 2)$ সেমি = 13 সেমি।</p>
+                <p>সাদা অংশের ক্ষেত্রফল = $(18 \times 13)$ বর্গসেমি = 234 বর্গসেমি।</p>
+                <p>$\therefore$ লাল রঙিন অংশের ক্ষেত্রফল = $(300 - 234)$ বর্গসেমি = $\color{#059669}{\mathbf{66}}$ <strong>বর্গসেমি</strong>।</p>
+                
+                <hr class="my-3">
+                <p class="fw-bold text-primary mb-2">(ii) দ্বিতীয় চিত্র (বাদামী ফ্রেম):</p>
+                <p>বাইরের আয়তক্ষেত্রের ক্ষেত্রফল = $(23 \times 15)$ বর্গসেমি = 345 বর্গসেমি।</p>
+                <p>ফ্রেমটি 2 সেমি চওড়া। তাই ভেতরের সাদা অংশের দৈর্ঘ্য = $23 - (2 \times 2)$ = 19 সেমি এবং প্রস্থ = $15 - (2 \times 2)$ = 11 সেমি।</p>
+                <p>সাদা অংশের ক্ষেত্রফল = $(19 \times 11)$ বর্গসেমি = 209 বর্গসেমি।</p>
+                <p>$\therefore$ বাদামী রঙিন অংশের ক্ষেত্রফল = $(345 - 209)$ বর্গসেমি = $\color{#059669}{\mathbf{136}}$ <strong>বর্গসেমি</strong>।</p>
+
+                <hr class="my-3">
+                <p class="fw-bold text-primary mb-2">(iii) তৃতীয় চিত্র (সবুজ L-আকৃতি):</p>
+                <p>মোট আয়তক্ষেত্রের ক্ষেত্রফল = $(18 \times 12)$ বর্গমিটার = 216 বর্গমিটার।</p>
+                <p>ভেতরের সাদা অংশের দৈর্ঘ্য = $18 - 4$ (ডানদিকের চওড়া অংশ) = 14 মিটার।</p>
+                <p>সাদা অংশের উচ্চতা দেওয়া আছে = 9 মিটার।</p>
+                <p>সাদা অংশের ক্ষেত্রফল = $(14 \times 9)$ বর্গমিটার = 126 বর্গমিটার।</p>
+                <p>$\therefore$ সবুজ রঙিন অংশের ক্ষেত্রফল = $(216 - 126)$ বর্গমিটার = $\color{#059669}{\mathbf{90}}$ <strong>বর্গমিটার</strong>।</p>
+
+                <hr class="my-3">
+                <p class="fw-bold text-primary mb-2">(iv) চতুর্থ চিত্র (কমলা H-আকৃতি):</p>
+                <p>H আকৃতিটি ৩টি আয়তক্ষেত্র দিয়ে তৈরি।</p>
+                <p>বামদিকের দন্ডের ক্ষেত্রফল = $(10 \times 4)$ বর্গসেমি = 40 বর্গসেমি।</p>
+                <p>ডানদিকের দন্ডের ক্ষেত্রফল = $(10 \times 4)$ বর্গসেমি = 40 বর্গসেমি।</p>
+                <p>ধরি, মাঝের সংযোজক দন্ডটির উচ্চতা 2 সেমি (যেহেতু মোট 10 এবং দুদিকে 4 করে 8)।</p>
+                <p>মাঝের দন্ডের ক্ষেত্রফল = $(5 \times 2)$ বর্গসেমি = 10 বর্গসেমি।</p>
+                <p>$\therefore$ কমলা রঙিন অংশের মোট ক্ষেত্রফল = $40 + 40 + 10$ = $\color{#059669}{\mathbf{90}}$ <strong>বর্গসেমি</strong> (প্রায়)।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">17. আমার স্কুলের একটি ঘরের দৈর্ঘ্য, প্রস্থ ও উচ্চতা যথাক্রমে 8 মিটার, 6 মিটার ও 5 মিটার। <br>(i) ঘরটির মেঝে সিমেন্ট করতে প্রতি বর্গমিটার 75 টাকা হিসাবে কত খরচ হবে হিসাব করি। <br>(ii) হিসাব করে দেখি ঘরটির সিলিং সাদা রং করতে প্রতি বর্গমিটার 52 টাকা হিসাবে কত খরচ হবে। <br>(iii) ঘরটিতে 1.5 মিটার চওড়া ও 1.8 মিটার উঁচু দুটি দরজা এবং 1.2 মিটার চওড়া ও 1.4 মিটার উঁচু দুটি জানালা আছে। প্রতি বর্গমিটার 260 টাকা হিসাবে দরজা ও জানালা রং করতে কত খরচ হবে হিসাব করি। <br>(iv) দরজা ও জানালা বাদ দিয়ে চার দেওয়াল প্রতি বর্গমিটার 95 টাকা হিসাবে প্লাস্টার করতে ও প্রতি বর্গমিটার 40 টাকা হিসাবে রং করতে মোট কত খরচ পড়বে হিসাব করি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>ঘরের দৈর্ঘ্য = 8 মি, প্রস্থ = 6 মি, উচ্চতা = 5 মি।</p>
+                
+                <p class="mt-3"><strong>(i) মেঝের হিসাব:</strong></p>
+                <p>মেঝের ক্ষেত্রফল = (দৈর্ঘ্য $\times$ প্রস্থ) = $(8 \times 6)$ বর্গমিটার = 48 বর্গমিটার।</p>
+                <p>মেঝে সিমেন্ট করতে খরচ হবে = $(48 \times 75)$ টাকা = $\color{#059669}{\mathbf{3600}}$ <strong>টাকা</strong>।</p>
+
+                <p class="mt-3"><strong>(ii) সিলিং-এর হিসাব:</strong></p>
+                <p>সিলিং-এর ক্ষেত্রফল মেঝের ক্ষেত্রফলের সমান, অর্থাৎ 48 বর্গমিটার।</p>
+                <p>সিলিং রং করতে খরচ হবে = $(48 \times 52)$ টাকা = $\color{#059669}{\mathbf{2496}}$ <strong>টাকা</strong>।</p>
+
+                <p class="mt-3"><strong>(iii) দরজা ও জানালার হিসাব:</strong></p>
+                <p>1টি দরজার ক্ষেত্রফল = $(1.5 \times 1.8)$ বর্গমিটার = 2.7 বর্গমিটার।</p>
+                <p>2টি দরজার মোট ক্ষেত্রফল = $(2.7 \times 2)$ বর্গমিটার = 5.4 বর্গমিটার।</p>
+                <p>1টি জানালার ক্ষেত্রফল = $(1.2 \times 1.4)$ বর্গমিটার = 1.68 বর্গমিটার।</p>
+                <p>2টি জানালার মোট ক্ষেত্রফল = $(1.68 \times 2)$ বর্গমিটার = 3.36 বর্গমিটার।</p>
+                <p>দরজা ও জানালার মোট ক্ষেত্রফল = $(5.4 + 3.36)$ বর্গমিটার = 8.76 বর্গমিটার।</p>
+                <p>দরজা ও জানালা রং করতে খরচ হবে = $(8.76 \times 260)$ টাকা = $\color{#059669}{\mathbf{2277.60}}$ <strong>টাকা</strong>।</p>
+
+                <p class="mt-3"><strong>(iv) চার দেওয়ালের হিসাব:</strong></p>
+                <p>চার দেওয়ালের মোট ক্ষেত্রফল = $2 \times (\text{দৈর্ঘ্য} + \text{প্রস্থ}) \times \text{উচ্চতা}$</p>
+                <p>$= 2 \times (8 + 6) \times 5$ বর্গমিটার = $2 \times 14 \times 5$ বর্গমিটার = 140 বর্গমিটার।</p>
+                <p>দরজা ও জানালা বাদে চার দেওয়ালের ক্ষেত্রফল = $(140 - 8.76)$ বর্গমিটার = 131.24 বর্গমিটার।</p>
+                <p>প্লাস্টার ও রং করার মোট রেট = $(95 + 40)$ টাকা = 135 টাকা প্রতি বর্গমিটার।</p>
+                <p>প্লাস্টার ও রং করতে মোট খরচ পড়বে = $(131.24 \times 135)$ টাকা = $\color{#059669}{\mathbf{17717.40}}$ <strong>টাকা</strong>।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">18. আমাদের পাড়ার বর্গক্ষেত্রাকার ক্লাব ঘরের একটি পাশের দৈর্ঘ্য 15 মিটার এবং উচ্চতা 5 মিটার। এই ক্লাবঘরে 1.5 মিটার চওড়া ও 2 মিটার উঁচু চারটি দরজা আছে। দরজা বাদ দিয়ে প্রতি বর্গমিটার 350 টাকা হিসাবে চার দেওয়াল তেল রং করতে কত খরচ পড়বে হিসাব করি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p>বর্গক্ষেত্রাকার ঘরের দৈর্ঘ্য = প্রস্থ = 15 মিটার। উচ্চতা = 5 মিটার।</p>
+                <p>চার দেওয়ালের মোট ক্ষেত্রফল = $4 \times (\text{বাহুর দৈর্ঘ্য} \times \text{উচ্চতা})$</p>
+                <p>$= 4 \times (15 \times 5)$ বর্গমিটার = $4 \times 75$ বর্গমিটার = 300 বর্গমিটার।</p>
+                
+                <p class="mt-3">1টি দরজার ক্ষেত্রফল = $(1.5 \times 2)$ বর্গমিটার = 3 বর্গমিটার।</p>
+                <p>4টি দরজার মোট ক্ষেত্রফল = $(3 \times 4)$ বর্গমিটার = 12 বর্গমিটার।</p>
+                
+                <p class="mt-3">দরজা বাদে চার দেওয়ালের ক্ষেত্রফল = $(300 - 12)$ বর্গমিটার = 288 বর্গমিটার।</p>
+                
+                <p class="mt-3">প্রতি বর্গমিটার 350 টাকা হিসাবে তেল রং করতে খরচ পড়বে = $(288 \times 350)$ টাকা</p>
+                <p>$= 100800$ টাকা।</p>
+                <div class="mt-3"><strong>উত্তর:</strong> চার দেওয়াল তেল রং করতে মোট $\color{#059669}{\mathbf{\boxed{100800}}}$ <strong>টাকা</strong> খরচ পড়বে।</div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">19. ছবি আঁকি ও হিসাব করি - একটি আয়তক্ষেত্রাকার ক্ষেত্রের মধ্যে একটি বর্গক্ষেত্রাকার পুকুর আঁকি যার চারদিকে 3 মিটার চওড়া পাড় বাঁধানো রাস্তা আছে এবং এর পাড় সমেত 18 মিটার দীর্ঘ ও 15 মিটার চওড়া বাগান আছে। হিসাব করে দেখি পুকুর ক্ষেত্রের $\square$ বর্গমিটার এবং রাস্তা বাদে $\square$ বর্গমিটার।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p class="text-danger fw-bold mb-2">বিশেষ দ্রষ্টব্য:</p>
+                <p>এই প্রশ্নটির তথ্যে অসংগতি রয়েছে। একটি বর্গক্ষেত্রাকার পুকুরের চারদিকে সমান চওড়া (3 মি) পাড় থাকলে, সম্পূর্ণ অংশটি (পুকুর + পাড়) একটি বর্গক্ষেত্রই হবে। কিন্তু প্রশ্নে এটিকে 18 মিটার দীর্ঘ ও 15 মিটার চওড়া (আয়তাকার) বলা হয়েছে, যা বাস্তবে অসম্ভব।</p>
+                <p class="text-muted">তবে, যদি আমরা ধরে নিই যে 18 মিটার ও 15 মিটার মাপের আয়তাকার বাগানের চারপাশে ভেতরের দিকে 3 মিটার চওড়া রাস্তা আছে (পুকুরটি আয়তাকার ধরে), তবে সমাধানটি নিম্নরূপ হতে পারে:</p>
+                
+                <p class="mt-3">বাগানের দৈর্ঘ্য = 18 মি, প্রস্থ = 15 মি।</p>
+                <p>বাগানের মোট ক্ষেত্রফল = $(18 \times 15)$ = 270 বর্গমিটার।</p>
+                
+                <p>রাস্তা বাদে ভেতরের অংশের (পুকুরের) দৈর্ঘ্য = $18 - (3 \times 2)$ = 12 মি।</p>
+                <p>রাস্তা বাদে ভেতরের অংশের (পুকুরের) প্রস্থ = $15 - (3 \times 2)$ = 9 মি।</p>
+                <p>পুকুরের ক্ষেত্রফল = $(12 \times 9)$ = 108 বর্গমিটার।</p>
+                
+                <p class="mt-3">রাস্তার ক্ষেত্রফল = বাগানের মোট ক্ষেত্রফল - পুকুরের ক্ষেত্রফল</p>
+                <p>$= 270 - 108$ = 162 বর্গমিটার।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">20. আমার আয়তক্ষেত্রাকার ঘরের দৈর্ঘ্য $\square$ মিটার, প্রস্থ $\square$ মিটার এবং উচ্চতা $\square$ মিটার। জানলা দরজা সমেত আমার আয়তক্ষেত্রাকার ঘরের চার দেওয়ালের ক্ষেত্রফল $\square$ বর্গমিটার।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step p-3 rounded">
+                <p class="text-muted mb-2"><i>[এটি একটি নিজে থেকে মান বসিয়ে করার অংক। আমরা সুবিধামতো মান ধরে নিচ্ছি:]</i></p>
+                <p>ধরি, আমার আয়তক্ষেত্রাকার ঘরের দৈর্ঘ্য = <strong>8</strong> মিটার, প্রস্থ = <strong>6</strong> মিটার এবং উচ্চতা = <strong>5</strong> মিটার।</p>
+                
+                <p class="mt-3">আমরা জানি, চার দেওয়ালের ক্ষেত্রফল = $2 \times (\text{দৈর্ঘ্য} + \text{প্রস্থ}) \times \text{উচ্চতা}$</p>
+                <p>$= 2 \times (8 + 6) \times 5$ বর্গমিটার</p>
+                <p>$= 2 \times 14 \times 5$ বর্গমিটার</p>
+                <p>$= 140$ বর্গমিটার।</p>
+                
+                <div class="mt-3"><strong>উত্তর:</strong> জানলা দরজা সমেত আমার আয়তক্ষেত্রাকার ঘরের চার দেওয়ালের ক্ষেত্রফল $\color{#059669}{\mathbf{\boxed{140}}}$ <strong>বর্গমিটার</strong>।</div>
+            </div>
+        </div>
+    </div></div>
+<script>
+(function () {
+  function renderMathJax() {
+    if (!window.MathJax || !MathJax.Hub) return;
+    var target = document.querySelector(".solution-container") || document.body;
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, target]);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", renderMathJax, { once: true });
+  else renderMathJax();
+  window.abvrpMc_rerenderMathJax = renderMathJax;
+})();
+</script>
+<script>
+(function(){'use strict';var root=document.querySelector('.solution-container');if(!root)return;var timer;function fit(){var small=window.matchMedia('(max-width:900px)').matches;root.querySelectorAll('.stat-table').forEach(function(table){table.classList.remove('is-overflowing');table.style.removeProperty('--fit-font-size');table.style.removeProperty('--fit-cell-padding');if(!small)return;var wrapper=table.closest('.stat-table-wrapper');if(!wrapper)return;var oldLayout=table.style.tableLayout,oldWidth=table.style.width;table.style.tableLayout='auto';table.style.width='max-content';var available=wrapper.clientWidth,natural=table.scrollWidth;table.style.tableLayout=oldLayout;table.style.width=oldWidth;if(!available||natural<=available+1)return;table.classList.add('is-overflowing');var cols=1;table.querySelectorAll('tr').forEach(function(row){var count=0;row.querySelectorAll('th,td').forEach(function(cell){count+=Math.max(1,cell.colSpan||1)});cols=Math.max(cols,count)});var font=cols>=10?8:cols>=7?9:cols>=5?10:11;table.style.setProperty('--fit-font-size',font+'px');table.style.setProperty('--fit-cell-padding',cols>=7?'2px':'3px');requestAnimationFrame(function(){var size=font;while(table.scrollWidth>wrapper.clientWidth+1&&size>7){size--;table.style.setProperty('--fit-font-size',size+'px')}})})}function schedule(){clearTimeout(timer);timer=setTimeout(fit,100)}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fit,{once:true});else fit();window.addEventListener('resize',schedule);window.addEventListener('orientationchange',schedule);if('ResizeObserver'in window){var ro=new ResizeObserver(schedule);ro.observe(root)}if('MutationObserver'in window){var mo=new MutationObserver(schedule);mo.observe(root,{childList:true,subtree:true,characterData:true})}})();
+</script>
+<script src="https://cdn.jsdelivr.net/gh/aslamkd/MadhyamikGanitprabha@main/koshe-dekhi-tools.js" charset="utf-8"></script>
+</body>
+</html>

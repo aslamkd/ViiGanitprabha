@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>নিজে-করি-14.2</title>
+<style>.st-math-card{background:rgb(255,255,255);border:1px solid rgb(234,236,240);border-radius:12px;margin-bottom:25px;overflow:hidden;box-shadow:rgba(0,0,0,0.02) 0px 4px 6px -1px}.st-math-q{background-color:rgb(248,250,252);border-bottom:2px solid rgb(226,232,240);padding:18px 24px;font-size:1.15rem;font-weight:700;color:rgb(15,23,42);line-height:1.6}.st-math-ans{padding:24px;font-size:1.05rem;color:rgb(51,65,85);line-height:1.8}.st-calc-step{border-left:3px solid rgb(203,213,225);background:rgb(248,250,252);padding:15px 15px 15px 20px;border-radius:0px 8px 8px 0px;height:100%;font-size:1.1rem;overflow-x:auto}.st-calc-step p{margin-bottom:6px}.st-calc-step p:last-child{margin-bottom:0px}@media (max-width:768px){.st-math-card{margin-bottom:15px;border-radius:8px}.st-math-q{padding:15px;font-size:1.05rem}.st-math-ans{padding:15px;font-size:0.95rem}.st-calc-step{padding:12px;border-left-width:2px}}.solution-container .MathJax_Display{overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;padding-bottom:6px;box-sizing:border-box;line-height:normal}.solution-container{overflow-x:hidden}#MathJax_Message{display:none!important}span.MathJax{pointer-events:none}.sol-badge{display:inline-block;background:#2563eb;color:#fff;padding:4px 14px;border-radius:20px;font-size:.85rem;font-weight:700;letter-spacing:.5px;box-shadow:0 1px 2px rgba(0,0,0,.12);margin-bottom:1rem}.solution-container .MathJax_Display{overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;padding-bottom:6px;box-sizing:border-box;line-height:normal}.solution-container{overflow-x:hidden}#MathJax_Message{display:none!important}span.MathJax{pointer-events:none}.solution-container,.solution-container *{box-sizing:border-box}html,body{max-width:100%}.solution-container{width:100%;max-width:100%;min-width:0}.solution-container p,.solution-container h1,.solution-container h2,.solution-container h3,.solution-container h4,.solution-container h5,.solution-container h6,.solution-container li{overflow-wrap:anywhere}.solution-container .stat-table-wrapper{width:100%;max-width:100%;min-width:0}.solution-container .stat-table{width:100%;max-width:100%;border-collapse:collapse}@media(max-width:900px){.solution-container .stat-table-wrapper{overflow-x:hidden}.solution-container .stat-table.is-overflowing{table-layout:fixed;width:100%!important;font-size:var(--fit-font-size,12px)!important}.solution-container .stat-table.is-overflowing th,.solution-container .stat-table.is-overflowing td{padding:var(--fit-cell-padding,4px)!important;white-space:normal!important;overflow-wrap:anywhere;word-break:normal;min-width:0;line-height:1.4}}.solution-container .MathJax_Display{max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;box-sizing:border-box}</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js"],
+    TeX: { extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js", "cancel.js"] },
+    tex2jax: { inlineMath: [["$", "$"], ["\\(", "\\)"]], displayMath: [["$$", "$$"], ["\\[", "\\]"]], processEscapes: true, skipTags: ["script", "noscript", "style", "textarea", "pre", "code"] },
+    "HTML-CSS": { availableFonts: ["TeX"], preferredFont: "TeX", webFont: "TeX", mtextFontInherit: true, linebreaks: { automatic: false, width: "container" } },
+    showMathMenu: false, messageStyle: "none", skipStartupTypeset: true
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+<div class="solution-container"><div class="st-math-card">
+        <div class="st-math-q">১) একটা ত্রিভুজের কতগুলি উচ্চতা পাব নিজে এঁকে দেখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step">
+                <p>একটি ত্রিভুজের ৩টি শীর্ষবিন্দু এবং ৩টি বাহু থাকে। ত্রিভুজের যেকোনো শীর্ষবিন্দু থেকে তার বিপরীত বাহুর ওপর লম্ব অঙ্কন করলে সেই লম্বের দৈর্ঘ্যকে ত্রিভুজটির <strong>উচ্চতা (Altitude)</strong> বলা হয়।</p>
+                <p>যেহেতু ত্রিভুজের শীর্ষবিন্দু ৩টি, তাই আমরা প্রতিটি শীর্ষবিন্দু থেকে বিপরীত বাহুর ওপর একটি করে লম্ব আঁকতে পারি। সুতরাং, <strong>একটি ত্রিভুজের মোট ৩টি উচ্চতা পাওয়া যায়।</strong></p>
+                
+                <div class="text-center mt-4 mb-3">
+                    <svg viewBox="0 0 350 250" width="100%" max-width="350px">
+                        <!-- Triangle -->
+                        <polygon points="150,30 50,200 300,200" fill="#f0fdf4" stroke="#059669" stroke-width="2"></polygon>
+                        
+                        <!-- Altitudes -->
+                        <!-- AD (from A perp to BC) -->
+                        <line x1="150" y1="30" x2="150" y2="200" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,5"></line>
+                        <!-- BE (from B perp to AC) -->
+                        <line x1="50" y1="200" x2="198" y2="84" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,5"></line>
+                        <!-- CF (from C perp to AB) -->
+                        <line x1="300" y1="200" x2="98" y2="118" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,5"></line>
+                        
+                        <!-- Right Angle Symbols -->
+                        <polyline points="150,190 160,190 160,200" fill="none" stroke="#dc2626" stroke-width="1.5"></polyline>
+                        
+                        <!-- Vertices -->
+                        <circle cx="150" cy="30" r="4" fill="#0f172a"></circle>
+                        <circle cx="50" cy="200" r="4" fill="#0f172a"></circle>
+                        <circle cx="300" cy="200" r="4" fill="#0f172a"></circle>
+                        
+                        <!-- Orthocenter -->
+                        <circle cx="150" cy="148" r="4" fill="#ea580c"></circle>
+                        
+                        <!-- Labels -->
+                        <text x="145" y="20" font-family="Arial" font-size="16" font-weight="bold" fill="#0f172a">A</text>
+                        <text x="35" y="215" font-family="Arial" font-size="16" font-weight="bold" fill="#0f172a">B</text>
+                        <text x="305" y="215" font-family="Arial" font-size="16" font-weight="bold" fill="#0f172a">C</text>
+                        
+                        <text x="145" y="220" font-family="Arial" font-size="16" font-weight="bold" fill="#dc2626">D</text>
+                        <text x="205" y="80" font-family="Arial" font-size="16" font-weight="bold" fill="#dc2626">E</text>
+                        <text x="80" y="115" font-family="Arial" font-size="16" font-weight="bold" fill="#dc2626">F</text>
+                    </svg>
+                    <p class="text-muted mt-2 mb-0"><i>চিত্র: $\triangle ABC$ এর তিনটি উচ্চতা AD, BE এবং CF একটি বিন্দুতে ছেদ করেছে।</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">২) (i) কোন ত্রিভুজের উচ্চতা সেই ত্রিভুজের একটি বাহু হবে এঁকে দেখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step">
+                <p><strong>সমকোণী ত্রিভুজের (Right-angled Triangle)</strong> উচ্চতা তার একটি বাহু হয়।</p>
+                <p>একটি সমকোণী ত্রিভুজের সমকোণ সংলগ্ন দুটি বাহু একে অপরের ওপর লম্বভাবে থাকে। তাই ভূমি ছাড়া অপর লম্ব বাহুটিই ওই ত্রিভুজের উচ্চতা হিসেবে কাজ করে।</p>
+                
+                <div class="text-center mt-3">
+                    <svg viewBox="0 0 250 200" width="100%" max-width="250px">
+                        <!-- Right Triangle -->
+                        <polygon points="50,20 50,170 200,170" fill="#eff6ff" stroke="#2563eb" stroke-width="2"></polygon>
+                        
+                        <!-- Right Angle Symbol -->
+                        <polyline points="50,155 65,155 65,170" fill="none" stroke="#dc2626" stroke-width="2"></polyline>
+                        
+                        <!-- Vertices -->
+                        <circle cx="50" cy="20" r="4" fill="#0f172a"></circle>
+                        <circle cx="50" cy="170" r="4" fill="#0f172a"></circle>
+                        <circle cx="200" cy="170" r="4" fill="#0f172a"></circle>
+                        
+                        <!-- Labels -->
+                        <text x="35" y="20" font-family="Arial" font-size="16" font-weight="bold" fill="#0f172a">P</text>
+                        <text x="30" y="180" font-family="Arial" font-size="16" font-weight="bold" fill="#0f172a">Q</text>
+                        <text x="205" y="180" font-family="Arial" font-size="16" font-weight="bold" fill="#0f172a">R</text>
+                        
+                        <text x="10" y="100" font-family="Arial" font-size="14" fill="#dc2626" transform="rotate(-90 25,100)">উচ্চতা (বাহু)</text>
+                    </svg>
+                    <p class="text-muted mt-2 mb-0"><i>চিত্র: $\triangle PQR$ সমকোণী ত্রিভুজে QR ভূমি হলে PQ বাহুটিই ত্রিভুজের উচ্চতা।</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">২) (ii) কোন ত্রিভুজের একটি উচ্চতা ও মধ্যমা একই সরল রেখাংশ পাব এঁকে দেখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step">
+                <p><strong>সমবাহু ত্রিভুজের (Equilateral Triangle)</strong> ক্ষেত্রে যেকোনো শীর্ষবিন্দু থেকে বিপরীত বাহুর ওপর অঙ্কিত উচ্চতা এবং মধ্যমা একই সরলরেখাংশ হয়।</p>
+                <p>এছাড়া, <strong>সমদ্বিবাহু ত্রিভুজের (Isosceles Triangle)</strong> ক্ষেত্রে সমান বাহু দুটির অন্তর্ভুক্ত কোণের শীর্ষবিন্দু থেকে বিপরীত (অসমান) বাহুর ওপর অঙ্কিত উচ্চতা ও মধ্যমা একই সরলরেখাংশ হয়।</p>
+                
+                <div class="text-center mt-3">
+                    <svg viewBox="0 0 300 220" width="100%" max-width="300px">
+                        <!-- Isosceles/Equilateral Triangle -->
+                        <polygon points="150,20 50,180 250,180" fill="#fdf4ff" stroke="#9333ea" stroke-width="2"></polygon>
+                        
+                        <!-- Altitude / Median -->
+                        <line x1="150" y1="20" x2="150" y2="180" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,5"></line>
+                        
+                        <!-- Right Angle Symbol -->
+                        <polyline points="150,170 160,170 160,180" fill="none" stroke="#dc2626" stroke-width="1.5"></polyline>
+                        
+                        <!-- Equality Marks for Median -->
+                        <line x1="95" y1="175" x2="105" y2="185" stroke="#0f172a" stroke-width="2"></line>
+                        <line x1="195" y1="175" x2="205" y2="185" stroke="#0f172a" stroke-width="2"></line>
+                        
+                        <!-- Vertices -->
+                        <circle cx="150" cy="20" r="4" fill="#0f172a"></circle>
+                        <circle cx="50" cy="180" r="4" fill="#0f172a"></circle>
+                        <circle cx="250" cy="180" r="4" fill="#0f172a"></circle>
+                        <circle cx="150" cy="180" r="4" fill="#dc2626"></circle>
+                        
+                        <!-- Labels -->
+                        <text x="145" y="15" font-family="Arial" font-size="16" font-weight="bold" fill="#0f172a">X</text>
+                        <text x="35" y="195" font-family="Arial" font-size="16" font-weight="bold" fill="#0f172a">Y</text>
+                        <text x="255" y="195" font-family="Arial" font-size="16" font-weight="bold" fill="#0f172a">Z</text>
+                        <text x="145" y="200" font-family="Arial" font-size="16" font-weight="bold" fill="#dc2626">M</text>
+                    </svg>
+                    <p class="text-muted mt-2 mb-0"><i>চিত্র: $\triangle XYZ$ সমবাহু ত্রিভুজে XM একইসাথে উচ্চতা ($XM \perp YZ$) এবং মধ্যমা ($YM = MZ$)।</i></p>
+                </div>
+            </div>
+        </div>
+    </div></div>
+<script>
+(function () {
+  function renderMathJax() {
+    if (!window.MathJax || !MathJax.Hub) return;
+    var target = document.querySelector(".solution-container") || document.body;
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, target]);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", renderMathJax, { once: true });
+  else renderMathJax();
+  window.abvrpMc_rerenderMathJax = renderMathJax;
+})();
+</script>
+<script>
+(function(){'use strict';var root=document.querySelector('.solution-container');if(!root)return;var timer;function fit(){var small=window.matchMedia('(max-width:900px)').matches;root.querySelectorAll('.stat-table').forEach(function(table){table.classList.remove('is-overflowing');table.style.removeProperty('--fit-font-size');table.style.removeProperty('--fit-cell-padding');if(!small)return;var wrapper=table.closest('.stat-table-wrapper');if(!wrapper)return;var oldLayout=table.style.tableLayout,oldWidth=table.style.width;table.style.tableLayout='auto';table.style.width='max-content';var available=wrapper.clientWidth,natural=table.scrollWidth;table.style.tableLayout=oldLayout;table.style.width=oldWidth;if(!available||natural<=available+1)return;table.classList.add('is-overflowing');var cols=1;table.querySelectorAll('tr').forEach(function(row){var count=0;row.querySelectorAll('th,td').forEach(function(cell){count+=Math.max(1,cell.colSpan||1)});cols=Math.max(cols,count)});var font=cols>=10?8:cols>=7?9:cols>=5?10:11;table.style.setProperty('--fit-font-size',font+'px');table.style.setProperty('--fit-cell-padding',cols>=7?'2px':'3px');requestAnimationFrame(function(){var size=font;while(table.scrollWidth>wrapper.clientWidth+1&&size>7){size--;table.style.setProperty('--fit-font-size',size+'px')}})})}function schedule(){clearTimeout(timer);timer=setTimeout(fit,100)}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fit,{once:true});else fit();window.addEventListener('resize',schedule);window.addEventListener('orientationchange',schedule);if('ResizeObserver'in window){var ro=new ResizeObserver(schedule);ro.observe(root)}if('MutationObserver'in window){var mo=new MutationObserver(schedule);mo.observe(root,{childList:true,subtree:true,characterData:true})}})();
+</script>
+<script src="https://cdn.jsdelivr.net/gh/aslamkd/MadhyamikGanitprabha@main/koshe-dekhi-tools.js" charset="utf-8"></script>
+</body>
+</html>

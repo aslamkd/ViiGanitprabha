@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>নিজে-করি-1.2</title>
+<style>.st-math-card{background:rgb(255,255,255);border:1px solid rgb(234,236,240);border-radius:12px;margin-bottom:25px;overflow:hidden;box-shadow:rgba(0,0,0,0.02) 0px 4px 6px -1px}.st-math-q{background-color:rgb(248,250,252);border-bottom:2px solid rgb(226,232,240);padding:18px 24px;font-size:1.1rem;font-weight:700;color:rgb(15,23,42);line-height:1.6}.st-math-ans{padding:24px;font-size:1.05rem;color:rgb(51,65,85);line-height:1.8}.st-final-ans{background-color:rgb(240,253,244);border-left:4px solid rgb(16,185,129);padding:12px 16px;border-radius:4px;margin-top:15px;color:rgb(6,95,70);font-weight:500}.st-math-ans p{margin-bottom:12px}.st-math-ans p:last-child{margin-bottom:0px}@media (max-width:768px){.st-math-card{margin-bottom:15px;border-radius:8px}.st-math-q{padding:15px;font-size:1.05rem}.st-math-ans{padding:15px;font-size:0.95rem}.st-final-ans{padding:10px 12px;font-size:0.95rem;margin-top:12px}}.solution-container .MathJax_Display{overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;padding-bottom:6px;box-sizing:border-box;line-height:normal}.solution-container{overflow-x:hidden}#MathJax_Message{display:none!important}span.MathJax{pointer-events:none}.sol-badge{display:inline-block;background:#2563eb;color:#fff;padding:4px 14px;border-radius:20px;font-size:.85rem;font-weight:700;letter-spacing:.5px;box-shadow:0 1px 2px rgba(0,0,0,.12);margin-bottom:1rem}.solution-container .MathJax_Display{overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;padding-bottom:6px;box-sizing:border-box;line-height:normal}.solution-container{overflow-x:hidden}#MathJax_Message{display:none!important}span.MathJax{pointer-events:none}.solution-container,.solution-container *{box-sizing:border-box}html,body{max-width:100%}.solution-container{width:100%;max-width:100%;min-width:0}.solution-container p,.solution-container h1,.solution-container h2,.solution-container h3,.solution-container h4,.solution-container h5,.solution-container h6,.solution-container li{overflow-wrap:anywhere}.solution-container .stat-table-wrapper{width:100%;max-width:100%;min-width:0}.solution-container .stat-table{width:100%;max-width:100%;border-collapse:collapse}@media(max-width:900px){.solution-container .stat-table-wrapper{overflow-x:hidden}.solution-container .stat-table.is-overflowing{table-layout:fixed;width:100%!important;font-size:var(--fit-font-size,12px)!important}.solution-container .stat-table.is-overflowing th,.solution-container .stat-table.is-overflowing td{padding:var(--fit-cell-padding,4px)!important;white-space:normal!important;overflow-wrap:anywhere;word-break:normal;min-width:0;line-height:1.4}}.solution-container .MathJax_Display{max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;box-sizing:border-box}</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js"],
+    TeX: { extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js", "cancel.js"] },
+    tex2jax: { inlineMath: [["$", "$"], ["\\(", "\\)"]], displayMath: [["$$", "$$"], ["\\[", "\\]"]], processEscapes: true, skipTags: ["script", "noscript", "style", "textarea", "pre", "code"] },
+    "HTML-CSS": { availableFonts: ["TeX"], preferredFont: "TeX", webFont: "TeX", mtextFontInherit: true, linebreaks: { automatic: false, width: "container" } },
+    showMathMenu: false, messageStyle: "none", skipStartupTypeset: true
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+<div class="solution-container"><div class="st-math-card">
+        <div class="st-math-q">বইয়ের উদাহরণ (পৃষ্ঠা ৬): কোনো সম্পত্তির মোট পরিমাণের $\frac{9}{10}$ অংশের মূল্য 6543 টাকা হলে, ওই সম্পত্তির মোট পরিমাণের $\frac{1}{2}$ অংশের মূল্য কত দেখি।</div>
+        <div class="st-math-ans">
+            <p>গণিতের ভাষায় সমস্যাটি হলো,</p>
+            <div class="table-responsive mt-3 mb-3">
+                <table class="table table-bordered text-center mx-auto">
+                    <thead>
+                        <tr>
+                            <th class="py-2">সম্পত্তির পরিমাণ (অংশ)</th>
+                            <th class="py-2">মূল্য (টাকা)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">$\frac{9}{10}$</td>
+                            <td class="py-2">6543</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">$\frac{1}{2}$</td>
+                            <td class="py-2">?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>সম্পত্তির অংশ বাড়লে মূল্য <strong>বাড়বে</strong>, তাই সম্পত্তির অংশের সঙ্গে মূল্য <strong>সরল</strong> সম্পর্কে আছে।</p>
+            
+            <p class="mt-4">$\therefore$ <strong>ঐকিক নিয়মে সমাধান করে পাই,</strong></p>
+            <div class="ps-3 mt-2">
+                <p>সম্পত্তির $\frac{9}{10}$ অংশের মূল্য $6543$ টাকা</p>
+                <p>1 (সম্পূর্ণ) অংশের মূল্য $= 6543 \div \frac{9}{10}$ টাকা $= 6543 \times \frac{10}{9}$ টাকা</p>
+                <p>$\frac{1}{2}$ অংশের মূল্য $= 6543 \times \frac{10}{9} \times \frac{1}{2}$ টাকা</p>
+                <p class="mt-2">কাটাকুটি করে পাই:<br>
+                $= 727 \times 10 \times \frac{1}{2}$ &nbsp; <span class="text-muted"><i>(৯ দিয়ে ৬৫৪৩ কে ভাগ করে ৭২৭)</i></span><br>
+                $= 727 \times 5$ &nbsp; <span class="text-muted"><i>(২ দিয়ে ১০ কে ভাগ করে ৫)</i></span><br>
+                $= 3635$ টাকা</p>
+            </div>
+            <div class="st-final-ans mt-3"><strong>উত্তর:</strong> ওই সম্পত্তির মোট পরিমাণের $\frac{1}{2}$ অংশের মূল্য 3635 টাকা।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">1) একটি চাকা 55 বার ঘুরে 77 মিটার পথ যায়। তবে 98 মিটার পথ যেতে ওই চাকা কতবার ঘুরবে হিসাব করি।</div>
+        <div class="st-math-ans">
+            <p><strong>গণিতের ভাষায় সমস্যাটি হলো,</strong></p>
+            <div class="table-responsive mt-3 mb-3">
+                <table class="table table-bordered text-center mx-auto">
+                    <thead>
+                        <tr>
+                            <th class="py-2">অতিক্রান্ত পথ (মিটার)</th>
+                            <th class="py-2">চাকার ঘূর্ণন (বার)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">77</td>
+                            <td class="py-2">55</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">98</td>
+                            <td class="py-2">?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>অতিক্রান্ত পথ বাড়লে চাকার ঘূর্ণন <strong>বাড়বে</strong>, তাই এদের মধ্যে <strong>সরল</strong> সম্পর্ক আছে।</p>
+            
+            <p class="mt-4">$\therefore$ <strong>ঐকিক নিয়মে সমাধান করে পাই,</strong></p>
+            <div class="ps-3 mt-2">
+                <p>77 মিটার পথ যেতে চাকা ঘোরে = 55 বার</p>
+                <p>1 মিটার পথ যেতে চাকা ঘোরে = $\frac{55}{77}$ বার</p>
+                <p>98 মিটার পথ যেতে চাকা ঘোরে = $\frac{55 \times 98}{77}$ বার</p>
+                <p class="mt-2">কাটাকুটি করে পাই:<br>
+                $= \frac{5}{7} \times 98$ &nbsp; <span class="text-muted"><i>(১১ দিয়ে কেটে)</i></span><br>
+                $= 5 \times 14$ &nbsp; <span class="text-muted"><i>(৭ দিয়ে কেটে)</i></span><br>
+                $= 70$ বার</p>
+            </div>
+            <div class="st-final-ans mt-3"><strong>উত্তর:</strong> 98 মিটার পথ যেতে ওই চাকা 70 বার ঘুরবে।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">2) দীপ্তার্ক প্রত্যেক সপ্তাহে একদিন সাঁতার শিখতে যায়। 364 দিনে সে মোট কতদিন সাঁতার শিখতে যায় হিসাব করি।</div>
+        <div class="st-math-ans">
+            <p>আমরা জানি, 1 সপ্তাহ = 7 দিন।</p>
+            <p><strong>গণিতের ভাষায় সমস্যাটি হলো,</strong></p>
+            <div class="table-responsive mt-3 mb-3">
+                <table class="table table-bordered text-center mx-auto">
+                    <thead>
+                        <tr>
+                            <th class="py-2">মোট সময় (দিন)</th>
+                            <th class="py-2">সাঁতার শেখার সময় (দিন)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">7</td>
+                            <td class="py-2">1</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">364</td>
+                            <td class="py-2">?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>মোট সময় বাড়লে সাঁতার শেখার সময় <strong>বাড়বে</strong>, তাই এদের মধ্যে <strong>সরল</strong> সম্পর্ক আছে।</p>
+            
+            <p class="mt-4">$\therefore$ <strong>ঐকিক নিয়মে সমাধান করে পাই,</strong></p>
+            <div class="ps-3 mt-2">
+                <p>7 দিনে সাঁতার শিখতে যায় = 1 দিন</p>
+                <p>1 দিনে সাঁতার শিখতে যায় = $\frac{1}{7}$ দিন</p>
+                <p>364 দিনে সাঁতার শিখতে যায় = $\frac{1 \times 364}{7}$ দিন</p>
+                <p class="mt-2">ভাগ করে পাই:<br>
+                $= 364 \div 7$<br>
+                $= 52$ দিন</p>
+            </div>
+            <div class="st-final-ans mt-3"><strong>উত্তর:</strong> 364 দিনে সে মোট 52 দিন সাঁতার শিখতে যাবে।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">3) কবিতার 120 টি কাগজের প্রয়োজন। প্রত্যেক দিস্তায় 24 টি কাগজ আছে। কবিতা কত দিস্তা কাগজ কিনবে হিসাব করি।</div>
+        <div class="st-math-ans">
+            <p><strong>গণিতের ভাষায় সমস্যাটি হলো,</strong></p>
+            <div class="table-responsive mt-3 mb-3">
+                <table class="table table-bordered text-center mx-auto">
+                    <thead>
+                        <tr>
+                            <th class="py-2">কাগজের সংখ্যা (টি)</th>
+                            <th class="py-2">দিস্তা</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">24</td>
+                            <td class="py-2">1</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">120</td>
+                            <td class="py-2">?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>কাগজের সংখ্যা বাড়লে দিস্তা <strong>বাড়বে</strong>, তাই এদের মধ্যে <strong>সরল</strong> সম্পর্ক আছে।</p>
+            
+            <p class="mt-4">$\therefore$ <strong>ঐকিক নিয়মে সমাধান করে পাই,</strong></p>
+            <div class="ps-3 mt-2">
+                <p>24 টি কাগজ হয় = 1 দিস্তায়</p>
+                <p>1 টি কাগজ হয় = $\frac{1}{24}$ দিস্তায়</p>
+                <p>120 টি কাগজ হয় = $\frac{1 \times 120}{24}$ দিস্তায়</p>
+                <p class="mt-2">ভাগ করে পাই:<br>
+                $= 120 \div 24$<br>
+                $= 5$ দিস্তা</p>
+            </div>
+            <div class="st-final-ans mt-3"><strong>উত্তর:</strong> কবিতা মোট 5 দিস্তা কাগজ কিনবে।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">4) এক ডজন ডিমের দাম 48 টাকা হলে, 32 টি ডিমের দাম কত হবে হিসাব করে দেখি।</div>
+        <div class="st-math-ans">
+            <p>আমরা জানি, 1 ডজন = 12 টি।</p>
+            <p><strong>গণিতের ভাষায় সমস্যাটি হলো,</strong></p>
+            <div class="table-responsive mt-3 mb-3">
+                <table class="table table-bordered text-center mx-auto">
+                    <thead>
+                        <tr>
+                            <th class="py-2">ডিমের সংখ্যা (টি)</th>
+                            <th class="py-2">দাম (টাকা)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">12</td>
+                            <td class="py-2">48</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">32</td>
+                            <td class="py-2">?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>ডিমের সংখ্যা বাড়লে দাম <strong>বাড়বে</strong>, তাই এদের মধ্যে <strong>সরল</strong> সম্পর্ক আছে।</p>
+            
+            <p class="mt-4">$\therefore$ <strong>ঐকিক নিয়মে সমাধান করে পাই,</strong></p>
+            <div class="ps-3 mt-2">
+                <p>12 টি ডিমের দাম = 48 টাকা</p>
+                <p>1 টি ডিমের দাম = $\frac{48}{12}$ টাকা</p>
+                <p>32 টি ডিমের দাম = $\frac{48 \times 32}{12}$ টাকা</p>
+                <p class="mt-2">কাটাকুটি করে পাই:<br>
+                $= 4 \times 32$ &nbsp; <span class="text-muted"><i>(১২ দিয়ে ৪৮ কে কেটে)</i></span><br>
+                $= 128$ টাকা</p>
+            </div>
+            <div class="st-final-ans mt-3"><strong>উত্তর:</strong> 32 টি ডিমের দাম 128 টাকা হবে।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">5) প্রতিদিন 5 ঘণ্টা কাজ করলে 30 দিনে একটি কাজ শেষ করা যায়। প্রতিদিন 6 ঘণ্টা কাজ করলে কত দিনে সেই কাজ শেষ করা যাবে হিসাব করি।</div>
+        <div class="st-math-ans">
+            <p><strong>গণিতের ভাষায় সমস্যাটি হলো,</strong></p>
+            <div class="table-responsive mt-3 mb-3">
+                <table class="table table-bordered text-center mx-auto">
+                    <thead>
+                        <tr>
+                            <th class="py-2">প্রতিদিন কাজের সময় (ঘণ্টা)</th>
+                            <th class="py-2">কাজ শেষের সময় (দিন)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">5</td>
+                            <td class="py-2">30</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">6</td>
+                            <td class="py-2">?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>প্রতিদিন কাজের সময় বাড়লে কাজ শেষ করতে <strong>কম</strong> দিন লাগবে, তাই এদের মধ্যে <strong>ব্যস্ত</strong> সম্পর্ক আছে।</p>
+            
+            <p class="mt-4">$\therefore$ <strong>ঐকিক নিয়মে সমাধান করে পাই,</strong></p>
+            <div class="ps-3 mt-2">
+                <p>প্রতিদিন 5 ঘণ্টা কাজ করলে কাজ শেষ হয় = 30 দিনে</p>
+                <p>প্রতিদিন 1 ঘণ্টা কাজ করলে কাজ শেষ হবে = $30 \times 5$ দিনে &nbsp; <span class="text-muted"><i>(সময় বেশি লাগবে তাই গুণ)</i></span></p>
+                <p>প্রতিদিন 6 ঘণ্টা কাজ করলে কাজ শেষ হবে = $\frac{30 \times 5}{6}$ দিনে</p>
+                <p class="mt-2">কাটাকুটি করে পাই:<br>
+                $= 5 \times 5$ &nbsp; <span class="text-muted"><i>(৬ দিয়ে ৩০ কে কেটে ৫)</i></span><br>
+                $= 25$ দিনে</p>
+            </div>
+            <div class="st-final-ans mt-3"><strong>উত্তর:</strong> প্রতিদিন 6 ঘণ্টা কাজ করলে 25 দিনে কাজ শেষ করা যাবে।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">6) কোনো সম্পত্তির মোট পরিমাণের $\frac{5}{7}$ অংশের মূল্য 2825 টাকা। ওই সম্পত্তির মোট পরিমাণের $\frac{2}{7}$ অংশের মূল্য কত টাকা হিসাব করি।</div>
+        <div class="st-math-ans">
+            <p><strong>গণিতের ভাষায় সমস্যাটি হলো,</strong></p>
+            <div class="table-responsive mt-3 mb-3">
+                <table class="table table-bordered text-center mx-auto">
+                    <thead>
+                        <tr>
+                            <th class="py-2">সম্পত্তির পরিমাণ (অংশ)</th>
+                            <th class="py-2">মূল্য (টাকা)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">$\frac{5}{7}$</td>
+                            <td class="py-2">2825</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">$\frac{2}{7}$</td>
+                            <td class="py-2">?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>সম্পত্তির পরিমাণ কমলে মূল্য <strong>কমবে</strong>, তাই এদের মধ্যে <strong>সরল</strong> সম্পর্ক আছে।</p>
+            
+            <p class="mt-4">$\therefore$ <strong>ঐকিক নিয়মে সমাধান করে পাই,</strong></p>
+            <div class="ps-3 mt-2">
+                <p>সম্পত্তির $\frac{5}{7}$ অংশের মূল্য = 2825 টাকা</p>
+                <p>সম্পত্তির 1 (সম্পূর্ণ) অংশের মূল্য = $2825 \div \frac{5}{7} = 2825 \times \frac{7}{5}$ টাকা</p>
+                <p>সম্পত্তির $\frac{2}{7}$ অংশের মূল্য = $2825 \times \frac{7}{5} \times \frac{2}{7}$ টাকা</p>
+                <p class="mt-2">কাটাকুটি করে পাই:<br>
+                $= \frac{2825 \times 7 \times 2}{5 \times 7}$<br>
+                $= \frac{2825 \times 2}{5}$ &nbsp; <span class="text-muted"><i>(৭ ও ৭ কেটে গেল)</i></span><br>
+                $= 565 \times 2$ &nbsp; <span class="text-muted"><i>(৫ দিয়ে কেটে)</i></span><br>
+                $= 1130$ টাকা</p>
+            </div>
+            <div class="st-final-ans mt-3"><strong>উত্তর:</strong> ওই সম্পত্তির মোট পরিমাণের $\frac{2}{7}$ অংশের মূল্য 1130 টাকা।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">7) একটি শিবিরে 48 জন সৈন্যের 7 সপ্তাহের খাবার মজুত আছে। যদি ওই দলে আরও 8 জন সৈন্য যোগ দেয়, তবে ওই পরিমাণ খাবারে কত সপ্তাহ চলবে হিসাব করি।</div>
+        <div class="st-math-ans">
+            <p>দলে নতুন সৈন্য যোগ দিলে, মোট সৈন্য হবে = $48 + 8 = 56$ জন।</p>
+            <p><strong>গণিতের ভাষায় সমস্যাটি হলো,</strong></p>
+            <div class="table-responsive mt-3 mb-3">
+                <table class="table table-bordered text-center mx-auto">
+                    <thead>
+                        <tr>
+                            <th class="py-2">সৈন্য সংখ্যা (জন)</th>
+                            <th class="py-2">সময় (সপ্তাহ)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">48</td>
+                            <td class="py-2">7</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">56</td>
+                            <td class="py-2">?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>সৈন্য সংখ্যা বাড়লে খাবার <strong>কম</strong> দিন চলবে, তাই এদের মধ্যে <strong>ব্যস্ত</strong> সম্পর্ক আছে।</p>
+            
+            <p class="mt-4">$\therefore$ <strong>ঐকিক নিয়মে সমাধান করে পাই,</strong></p>
+            <div class="ps-3 mt-2">
+                <p>48 জন সৈন্যের খাবার চলে = 7 সপ্তাহ</p>
+                <p>1 জন সৈন্যের খাবার চলবে = $7 \times 48$ সপ্তাহ &nbsp; <span class="text-muted"><i>(বেশি চলবে তাই গুণ)</i></span></p>
+                <p>56 জন সৈন্যের খাবার চলবে = $\frac{7 \times 48}{56}$ সপ্তাহ</p>
+                <p class="mt-2">কাটাকুটি করে পাই:<br>
+                $= \frac{48}{8}$ &nbsp; <span class="text-muted"><i>(৭ দিয়ে ৫৬ কে কেটে ৮ হলো)</i></span><br>
+                $= 6$ সপ্তাহ</p>
+            </div>
+            <div class="st-final-ans mt-3"><strong>উত্তর:</strong> ওই পরিমাণ খাবারে 56 জন সৈন্যের 6 সপ্তাহ চলবে।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">8) একটি জাহাজে 50 জন নাবিকের 16 দিনের খাবার মজুত আছে। 10 দিন পরে আরও 10 জন নাবিক তাদের সঙ্গে যোগ দিলেন। বাকি খাবারে সকলের আর কত দিন চলবে হিসাব করে দেখি।</div>
+        <div class="st-math-ans">
+            <p>10 দিন পার হয়ে গেছে।<br>
+            $\therefore$ এখন খাবার অবশিষ্ট আছে = $(16 - 10)$ দিন = 6 দিনের।<br>
+            অর্থাৎ, ওই অবশিষ্ট খাবারে 50 জন নাবিকের 6 দিন চলত।</p>
+            <p>আরও 10 জন যোগ দেওয়ায় মোট নাবিক সংখ্যা হলো = $50 + 10 = 60$ জন।</p>
+            
+            <p><strong>গণিতের ভাষায় সমস্যাটি হলো,</strong></p>
+            <div class="table-responsive mt-3 mb-3">
+                <table class="table table-bordered text-center mx-auto">
+                    <thead>
+                        <tr>
+                            <th class="py-2">নাবিক সংখ্যা (জন)</th>
+                            <th class="py-2">সময় (দিন)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">50</td>
+                            <td class="py-2">6</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">60</td>
+                            <td class="py-2">?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>নাবিক সংখ্যা বাড়লে খাবার <strong>কম</strong> দিন চলবে, তাই এদের মধ্যে <strong>ব্যস্ত</strong> সম্পর্ক আছে।</p>
+            
+            <p class="mt-4">$\therefore$ <strong>ঐকিক নিয়মে সমাধান করে পাই,</strong></p>
+            <div class="ps-3 mt-2">
+                <p>50 জন নাবিকের বাকি খাবারে চলে = 6 দিন</p>
+                <p>1 জন নাবিকের বাকি খাবারে চলবে = $6 \times 50$ দিন</p>
+                <p>60 জন নাবিকের বাকি খাবারে চলবে = $\frac{6 \times 50}{60}$ দিন</p>
+                <p class="mt-2">কাটাকুটি করে পাই:<br>
+                $= \frac{300}{60} = 5$ দিন</p>
+            </div>
+            <div class="st-final-ans mt-3"><strong>উত্তর:</strong> বাকি খাবারে সকলের আর 5 দিন চলবে।</div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">9) 20 জন লোক ঠিক করল 30 দিনে তারা একটা বাড়ি সারানোর কাজ সম্পূর্ণ করবে। কিন্তু 6 দিন পরে তাদের মধ্যে 8 জন লোক অসুস্থ হয়ে পড়ল। হিসাব করে দেখি কত দিনে তারা বাড়ি সারানোর কাজ শেষ করবে।</div>
+        <div class="st-math-ans">
+            <p>6 দিন কাজ হয়ে গেছে।<br>
+            $\therefore$ কাজ বাকি আছে = $(30 - 6)$ দিনের = 24 দিনের।<br>
+            অর্থাৎ, বাকি কাজটুকু 20 জন লোক করলে 24 দিনে শেষ হতো।</p>
+            <p>8 জন লোক অসুস্থ হয়ে পড়ায়, লোক বাকি আছে = $20 - 8 = 12$ জন।</p>
+            
+            <p><strong>গণিতের ভাষায় সমস্যাটি হলো,</strong></p>
+            <div class="table-responsive mt-3 mb-3">
+                <table class="table table-bordered text-center mx-auto">
+                    <thead>
+                        <tr>
+                            <th class="py-2">লোক সংখ্যা (জন)</th>
+                            <th class="py-2">সময় (দিন)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">20</td>
+                            <td class="py-2">24</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">12</td>
+                            <td class="py-2">?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>লোক সংখ্যা কমলে কাজ শেষ করতে <strong>বেশি</strong> দিন লাগবে, তাই এদের মধ্যে <strong>ব্যস্ত</strong> সম্পর্ক আছে।</p>
+            
+            <p class="mt-4">$\therefore$ <strong>ঐকিক নিয়মে সমাধান করে পাই,</strong></p>
+            <div class="ps-3 mt-2">
+                <p>20 জন লোকের বাকি কাজ শেষ করতে লাগে = 24 দিন</p>
+                <p>1 জন লোকের বাকি কাজ শেষ করতে লাগবে = $24 \times 20$ দিন</p>
+                <p>12 জন লোকের বাকি কাজ শেষ করতে লাগবে = $\frac{24 \times 20}{12}$ দিন</p>
+                <p class="mt-2">কাটাকুটি করে পাই:<br>
+                $= 2 \times 20$ &nbsp; <span class="text-muted"><i>(১২ দিয়ে ২৪ কে কেটে ২ হলো)</i></span><br>
+                $= 40$ দিন</p>
+            </div>
+            <div class="st-final-ans mt-3"><strong>উত্তর:</strong> অসুস্থ হওয়ার পর, বাকি কাজটুকু তারা 40 দিনে শেষ করবে। <span class="text-muted">(ফলে সম্পূর্ণ কাজটি শেষ হতে মোট $6 + 40 = 46$ দিন সময় লাগবে)।</span></div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">10) 25 জন কৃষক 12 দিনে 15 বিঘা জমি চাষ করেন। তাহলে 30 জন কৃষক 16 দিনে কত বিঘা জমি চাষ করবেন হিসাব করে দেখি।</div>
+        <div class="st-math-ans">
+            <p><strong>গণিতের ভাষায় সমস্যাটি হলো,</strong></p>
+            <div class="table-responsive mt-3 mb-3">
+                <table class="table table-bordered text-center mx-auto">
+                    <thead>
+                        <tr>
+                            <th class="py-2">কৃষক সংখ্যা (জন)</th>
+                            <th class="py-2">সময় (দিন)</th>
+                            <th class="py-2">জমির পরিমাণ (বিঘা)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">25</td>
+                            <td class="py-2">12</td>
+                            <td class="py-2">15</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">30</td>
+                            <td class="py-2">16</td>
+                            <td class="py-2">?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>এখানে দুটি সম্পর্ক রয়েছে:<br>
+            ১) কৃষক সংখ্যা বাড়লে চাষের পরিমাণ <strong>বাড়বে</strong> (<strong>সরল</strong> সম্পর্ক)।<br>
+            ২) সময় বাড়লে চাষের পরিমাণ <strong>বাড়বে</strong> (<strong>সরল</strong> সম্পর্ক)।</p>
+            
+            <p class="mt-4">$\therefore$ <strong>ঐকিক নিয়মে সমাধান করে পাই,</strong></p>
+            <div class="ps-3 mt-2">
+                <p>25 জন কৃষক 12 দিনে চাষ করেন = 15 বিঘা</p>
+                <p>1 জন কৃষক 12 দিনে চাষ করেন = $\frac{15}{25}$ বিঘা &nbsp; <span class="text-muted"><i>(কৃষক কমলে, চাষ কম হবে)</i></span></p>
+                <p>1 জন কৃষক 1 দিনে চাষ করেন = $\frac{15}{25 \times 12}$ বিঘা &nbsp; <span class="text-muted"><i>(দিন কমলে, চাষ আরও কম হবে)</i></span></p>
+                <p>30 জন কৃষক 1 দিনে চাষ করেন = $\frac{15 \times 30}{25 \times 12}$ বিঘা</p>
+                <p>30 জন কৃষক 16 দিনে চাষ করেন = $\frac{15 \times 30 \times 16}{25 \times 12}$ বিঘা</p>
+                <p class="mt-2">কাটাকুটি করে পাই:<br>
+                উপরের গুণফল: $15 \times 30 \times 16 = 7200$<br>
+                নীচের গুণফল: $25 \times 12 = 300$<br>
+                $\therefore \frac{7200}{300} = 24$ বিঘা</p>
+            </div>
+            <div class="st-final-ans mt-3"><strong>উত্তর:</strong> 30 জন কৃষক 16 দিনে 24 বিঘা জমি চাষ করবেন।</div>
+        </div>
+    </div></div>
+<script>
+(function () {
+  function renderMathJax() {
+    if (!window.MathJax || !MathJax.Hub) return;
+    var target = document.querySelector(".solution-container") || document.body;
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, target]);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", renderMathJax, { once: true });
+  else renderMathJax();
+  window.abvrpMc_rerenderMathJax = renderMathJax;
+})();
+</script>
+<script>
+(function(){'use strict';var root=document.querySelector('.solution-container');if(!root)return;var timer;function fit(){var small=window.matchMedia('(max-width:900px)').matches;root.querySelectorAll('.stat-table').forEach(function(table){table.classList.remove('is-overflowing');table.style.removeProperty('--fit-font-size');table.style.removeProperty('--fit-cell-padding');if(!small)return;var wrapper=table.closest('.stat-table-wrapper');if(!wrapper)return;var oldLayout=table.style.tableLayout,oldWidth=table.style.width;table.style.tableLayout='auto';table.style.width='max-content';var available=wrapper.clientWidth,natural=table.scrollWidth;table.style.tableLayout=oldLayout;table.style.width=oldWidth;if(!available||natural<=available+1)return;table.classList.add('is-overflowing');var cols=1;table.querySelectorAll('tr').forEach(function(row){var count=0;row.querySelectorAll('th,td').forEach(function(cell){count+=Math.max(1,cell.colSpan||1)});cols=Math.max(cols,count)});var font=cols>=10?8:cols>=7?9:cols>=5?10:11;table.style.setProperty('--fit-font-size',font+'px');table.style.setProperty('--fit-cell-padding',cols>=7?'2px':'3px');requestAnimationFrame(function(){var size=font;while(table.scrollWidth>wrapper.clientWidth+1&&size>7){size--;table.style.setProperty('--fit-font-size',size+'px')}})})}function schedule(){clearTimeout(timer);timer=setTimeout(fit,100)}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fit,{once:true});else fit();window.addEventListener('resize',schedule);window.addEventListener('orientationchange',schedule);if('ResizeObserver'in window){var ro=new ResizeObserver(schedule);ro.observe(root)}if('MutationObserver'in window){var mo=new MutationObserver(schedule);mo.observe(root,{childList:true,subtree:true,characterData:true})}})();
+</script>
+<script src="https://cdn.jsdelivr.net/gh/aslamkd/MadhyamikGanitprabha@main/koshe-dekhi-tools.js" charset="utf-8"></script>
+</body>
+</html>

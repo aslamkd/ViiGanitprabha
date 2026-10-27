@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>কষে-দেখি-16</title>
+<style>.st-math-card{background:rgb(255,255,255);border:1px solid rgb(234,236,240);border-radius:12px;margin-bottom:25px;overflow:hidden;box-shadow:rgba(0,0,0,0.02) 0px 4px 6px -1px}.st-math-q{background-color:rgb(248,250,252);border-bottom:2px solid rgb(226,232,240);padding:18px 24px;font-size:1.15rem;font-weight:700;color:rgb(15,23,42);line-height:1.6}.st-math-ans{padding:24px;font-size:1.05rem;color:rgb(51,65,85);line-height:1.8}.st-calc-step{border-left:3px solid rgb(203,213,225);background:rgb(248,250,252);padding:15px 15px 15px 20px;border-radius:0px 8px 8px 0px;height:100%;font-size:1.1rem;overflow-x:auto}.st-calc-step p{margin-bottom:6px}.st-calc-step p:last-child{margin-bottom:0px}@media (max-width:768px){.st-math-card{margin-bottom:15px;border-radius:8px}.st-math-q{padding:15px;font-size:1.05rem}.st-math-ans{padding:15px;font-size:0.95rem}.st-calc-step{padding:12px;border-left-width:2px}}.solution-container .MathJax_Display{overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;padding-bottom:6px;box-sizing:border-box;line-height:normal}.solution-container{overflow-x:hidden}#MathJax_Message{display:none!important}span.MathJax{pointer-events:none}.sol-badge{display:inline-block;background:#2563eb;color:#fff;padding:4px 14px;border-radius:20px;font-size:.85rem;font-weight:700;letter-spacing:.5px;box-shadow:0 1px 2px rgba(0,0,0,.12);margin-bottom:1rem}.solution-container .MathJax_Display{overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;padding-bottom:6px;box-sizing:border-box;line-height:normal}.solution-container{overflow-x:hidden}#MathJax_Message{display:none!important}span.MathJax{pointer-events:none}.solution-container,.solution-container *{box-sizing:border-box}html,body{max-width:100%}.solution-container{width:100%;max-width:100%;min-width:0}.solution-container p,.solution-container h1,.solution-container h2,.solution-container h3,.solution-container h4,.solution-container h5,.solution-container h6,.solution-container li{overflow-wrap:anywhere}.solution-container .stat-table-wrapper{width:100%;max-width:100%;min-width:0}.solution-container .stat-table{width:100%;max-width:100%;border-collapse:collapse}@media(max-width:900px){.solution-container .stat-table-wrapper{overflow-x:hidden}.solution-container .stat-table.is-overflowing{table-layout:fixed;width:100%!important;font-size:var(--fit-font-size,12px)!important}.solution-container .stat-table.is-overflowing th,.solution-container .stat-table.is-overflowing td{padding:var(--fit-cell-padding,4px)!important;white-space:normal!important;overflow-wrap:anywhere;word-break:normal;min-width:0;line-height:1.4}}.solution-container .MathJax_Display{max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;box-sizing:border-box}</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js"],
+    TeX: { extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js", "cancel.js"] },
+    tex2jax: { inlineMath: [["$", "$"], ["\\(", "\\)"]], displayMath: [["$$", "$$"], ["\\[", "\\]"]], processEscapes: true, skipTags: ["script", "noscript", "style", "textarea", "pre", "code"] },
+    "HTML-CSS": { availableFonts: ["TeX"], preferredFont: "TeX", webFont: "TeX", mtextFontInherit: true, linebreaks: { automatic: false, width: "container" } },
+    showMathMenu: false, messageStyle: "none", skipStartupTypeset: true
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+<div class="solution-container"><div class="st-math-card">
+        <div class="st-math-q">1. আমাদের পাড়ার 55 টি পরিবারের সদস্যসংখ্যার একটি স্তম্ভ লেখচিত্র তৈরি করলাম। এই স্তম্ভ লেখচিত্র দেখি ও নীচের প্রশ্নের উত্তর খোঁজার চেষ্টা করি—<br><br>(a) 55 টি পরিবারের মধ্যে 4 জন সদস্য সংখ্যার পরিবার কতগুলো লিখি।<br>(b) এই 55 টি পরিবারের মধ্যে সবচেয়ে বেশি পরিবারের সদস্য সংখ্যা কত লিখি। এরকম পরিবারের সংখ্যা কত লিখি।<br>(c) স্তম্ভ লেখচিত্র থেকে দেখছি [ ] টি পরিবারের সদস্য সংখ্যা 5 এবং [ ] টি পরিবারের সদস্য সংখ্যা 3।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step">
+                <p class="text-muted mb-3"><i>[প্রদত্ত স্তম্ভ লেখচিত্রে X-অক্ষে সদস্য সংখ্যা এবং Y-অক্ষে পরিবারের সংখ্যা দেওয়া আছে। 1 একক = 1 টি পরিবার।]</i></p>
+                <ol>
+                    <li><strong>(a)</strong> স্তম্ভ লেখচিত্র থেকে দেখা যাচ্ছে, 4 জন সদস্য সংখ্যার সোজা স্তম্ভের উচ্চতা 15 পর্যন্ত গেছে। অর্থাৎ, 4 জন সদস্য সংখ্যার পরিবার হলো <strong>15 টি</strong>।</li>
+                    <li><strong>(b)</strong> সবচেয়ে উঁচু স্তম্ভটি হলো 3 জন সদস্য সংখ্যার (20 পর্যন্ত)। অর্থাৎ, সবচেয়ে বেশি পরিবারের সদস্য সংখ্যা <strong>3 জন</strong>। এবং এরকম পরিবারের সংখ্যা <strong>20 টি</strong>।</li>
+                    <li><strong>(c)</strong> স্তম্ভ লেখচিত্র থেকে দেখছি <strong>5</strong> টি পরিবারের সদস্য সংখ্যা 5 এবং <strong>20</strong> টি পরিবারের সদস্য সংখ্যা 3।</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">2. নীচের পর্বতশৃঙ্গের উচ্চতাগুলি দেখি এবং ছক কাগজে 1 একক = 1000 মিটার উচ্চতা ধরে স্তম্ভলেখ তৈরি করি।<br>
+        <div class="table-responsive mt-2">
+            <table class="table table-bordered text-center mb-0">
+                <tbody><tr><th>পর্বতশৃঙ্গের নাম</th><th>গডউইন অস্টিন</th><th>কৈলাশ</th><th>নন্দাদেবী</th><th>অন্নপূর্ণা</th></tr>
+                <tr><td>উচ্চতা (মিটার প্রায়)</td><td>8610</td><td>6710</td><td>7825</td><td>8090</td></tr>
+            </tbody></table>
+        </div></div>
+        <div class="st-math-ans">
+            <div class="st-calc-step">
+                <p><strong>স্কেল:</strong> Y-অক্ষে 1 একক = 1000 মিটার।</p>
+                <div class="text-center mt-4 mb-4">
+                    <svg viewBox="0 0 600 400" width="100%">
+                        <!-- Grid Lines & Labels -->
+                        <g stroke="#e2e8f0" stroke-width="1">
+                            <line x1="60" y1="350" x2="550" y2="350" stroke="#94a3b8" stroke-width="2"></line> <!-- Base -->
+                            <line x1="60" y1="350" x2="60" y2="30" stroke="#94a3b8" stroke-width="2"></line> <!-- Y Axis -->
+                            
+                            <!-- Horizontal Grids (0 to 10000, step 2000) -->
+                            <line x1="60" y1="290" x2="550" y2="290"></line> <text x="50" y="295" font-size="12" text-anchor="end" fill="#64748b">2000</text>
+                            <line x1="60" y1="230" x2="550" y2="230"></line> <text x="50" y="235" font-size="12" text-anchor="end" fill="#64748b">4000</text>
+                            <line x1="60" y1="170" x2="550" y2="170"></line> <text x="50" y="175" font-size="12" text-anchor="end" fill="#64748b">6000</text>
+                            <line x1="60" y1="110" x2="550" y2="110"></line> <text x="50" y="115" font-size="12" text-anchor="end" fill="#64748b">8000</text>
+                            <line x1="60" y1="50" x2="550" y2="50"></line> <text x="50" y="55" font-size="12" text-anchor="end" fill="#64748b">10000</text>
+                        </g>
+
+                        <!-- Bars (Formula: Height = 350 - (value / 10000) * 300) -->
+                        <g fill="#3b82f6">
+                            <!-- গডউইন অস্টিন 8610 -> y = 350 - 258.3 = 91.7 -->
+                            <rect x="100" y="91.7" width="50" height="258.3" rx="2"></rect>
+                            <text x="125" y="85" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="bold">8610</text>
+                            
+                            <!-- কৈলাশ 6710 -> y = 350 - 201.3 = 148.7 -->
+                            <rect x="210" y="148.7" width="50" height="201.3" rx="2"></rect>
+                            <text x="235" y="142" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="bold">6710</text>
+                            
+                            <!-- নন্দাদেবী 7825 -> y = 350 - 234.75 = 115.25 -->
+                            <rect x="320" y="115.25" width="50" height="234.75" rx="2"></rect>
+                            <text x="345" y="108" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="bold">7825</text>
+                            
+                            <!-- অন্নপূর্ণা 8090 -> y = 350 - 242.7 = 107.3 -->
+                            <rect x="430" y="107.3" width="50" height="242.7" rx="2"></rect>
+                            <text x="455" y="100" font-size="12" text-anchor="middle" fill="#0f172a" font-weight="bold">8090</text>
+                        </g>
+
+                        <!-- X Axis Labels -->
+                        <g font-size="13" fill="#0f172a" font-weight="600" text-anchor="middle">
+                            <text x="125" y="375">গডউইন অস্টিন</text>
+                            <text x="235" y="375">কৈলাশ</text>
+                            <text x="345" y="375">নন্দাদেবী</text>
+                            <text x="455" y="375">অন্নপূর্ণা</text>
+                        </g>
+                        
+                        <!-- Axis Titles -->
+                        <text x="25" y="200" font-size="14" fill="#0f172a" font-weight="bold" transform="rotate(-90 25,200)">উচ্চতা (মিটার)</text>
+                    </svg>
+                    <p class="text-muted mt-2 mb-0"><i>চিত্র: বিভিন্ন পর্বতশৃঙ্গের উচ্চতা নির্দেশক স্তম্ভ লেখচিত্র।</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">3. আমাদের সপ্তম শ্রেণির 55 জন ছাত্রছাত্রী ও অষ্টম শ্রেণির 60 জন ছাত্রছাত্রীর প্রিয় খেলার তথ্য জোগাড় করে নীচের টেবিলে লিখলাম। এই তথ্য দ্বিস্তম্ভ লেখের মাধ্যমে প্রকাশ করি।<br>
+        <div class="table-responsive mt-2">
+            <table class="table table-bordered text-center mb-0">
+                <tbody><tr><th>খেলা</th><th>ক্রিকেট</th><th>ফুটবল</th><th>সাঁতার</th><th>হকি</th><th>খোকো</th></tr>
+                <tr><td>সপ্তম শ্রেণির ছাত্রছাত্রী সংখ্যা</td><td>12</td><td>14</td><td>8</td><td>11</td><td>10</td></tr>
+                <tr><td>অষ্টম শ্রেণির ছাত্রছাত্রী সংখ্যা</td><td>14</td><td>16</td><td>10</td><td>12</td><td>8</td></tr>
+            </tbody></table>
+        </div></div>
+        <div class="st-math-ans">
+            <div class="st-calc-step">
+                <p><strong>স্কেল:</strong> Y-অক্ষে 1 একক = 2 জন ছাত্রছাত্রী।</p>
+                <div class="text-center mt-4 mb-4">
+                    <svg viewBox="0 0 650 400" width="100%">
+                        
+                        <!-- Grid Lines -->
+                        <g stroke="#e2e8f0" stroke-width="1">
+                            <line x1="60" y1="350" x2="600" y2="350" stroke="#94a3b8" stroke-width="2"></line> <!-- Base -->
+                            <line x1="60" y1="350" x2="60" y2="30" stroke="#94a3b8" stroke-width="2"></line> <!-- Y Axis -->
+                            
+                            <!-- Grids (0 to 18, step 2. Max is 16) -> 1 unit = 15px (18*15=270, Base 350->80) -->
+                            <line x1="60" y1="320" x2="600" y2="320"></line> <text x="50" y="325" font-size="12" text-anchor="end">2</text>
+                            <line x1="60" y1="290" x2="600" y2="290"></line> <text x="50" y="295" font-size="12" text-anchor="end">4</text>
+                            <line x1="60" y1="260" x2="600" y2="260"></line> <text x="50" y="265" font-size="12" text-anchor="end">6</text>
+                            <line x1="60" y1="230" x2="600" y2="230"></line> <text x="50" y="235" font-size="12" text-anchor="end">8</text>
+                            <line x1="60" y1="200" x2="600" y2="200"></line> <text x="50" y="205" font-size="12" text-anchor="end">10</text>
+                            <line x1="60" y1="170" x2="600" y2="170"></line> <text x="50" y="175" font-size="12" text-anchor="end">12</text>
+                            <line x1="60" y1="140" x2="600" y2="140"></line> <text x="50" y="145" font-size="12" text-anchor="end">14</text>
+                            <line x1="60" y1="110" x2="600" y2="110"></line> <text x="50" y="115" font-size="12" text-anchor="end">16</text>
+                            <line x1="60" y1="80" x2="600" y2="80"></line> <text x="50" y="85" font-size="12" text-anchor="end">18</text>
+                        </g>
+
+                        <!-- Bars -->
+                        <!-- 1 unit = 15px. y = 350 - (val * 15) -->
+                        <g>
+                            <!-- ক্রিকেট -->
+                            <rect x="90" y="170" width="30" height="180" fill="#0ea5e9" rx="1"></rect> <!-- 7th: 12 -->
+                            <rect x="120" y="140" width="30" height="210" fill="#f43f5e" rx="1"></rect> <!-- 8th: 14 -->
+                            
+                            <!-- ফুটবল -->
+                            <rect x="190" y="140" width="30" height="210" fill="#0ea5e9" rx="1"></rect> <!-- 7th: 14 -->
+                            <rect x="220" y="110" width="30" height="240" fill="#f43f5e" rx="1"></rect> <!-- 8th: 16 -->
+                            
+                            <!-- সাঁতার -->
+                            <rect x="290" y="230" width="30" height="120" fill="#0ea5e9" rx="1"></rect> <!-- 7th: 8 -->
+                            <rect x="320" y="200" width="30" height="150" fill="#f43f5e" rx="1"></rect> <!-- 8th: 10 -->
+                            
+                            <!-- হকি -->
+                            <rect x="390" y="185" width="30" height="165" fill="#0ea5e9" rx="1"></rect> <!-- 7th: 11 -->
+                            <rect x="420" y="170" width="30" height="180" fill="#f43f5e" rx="1"></rect> <!-- 8th: 12 -->
+                            
+                            <!-- খোকো -->
+                            <rect x="490" y="200" width="30" height="150" fill="#0ea5e9" rx="1"></rect> <!-- 7th: 10 -->
+                            <rect x="520" y="230" width="30" height="120" fill="#f43f5e" rx="1"></rect> <!-- 8th: 8 -->
+                        </g>
+
+                        <!-- X Axis Labels -->
+                        <g font-size="14" fill="#0f172a" font-weight="600" text-anchor="middle">
+                            <text x="120" y="375">ক্রিকেট</text>
+                            <text x="220" y="375">ফুটবল</text>
+                            <text x="320" y="375">সাঁতার</text>
+                            <text x="420" y="375">হকি</text>
+                            <text x="520" y="375">খোকো</text>
+                        </g>
+
+                        <!-- Legend -->
+                        <g font-size="13" fill="#334155">
+                            <rect x="450" y="30" width="15" height="15" fill="#0ea5e9" rx="2"></rect>
+                            <text x="475" y="42">সপ্তম শ্রেণি</text>
+                            <rect x="450" y="55" width="15" height="15" fill="#f43f5e" rx="2"></rect>
+                            <text x="475" y="67">অষ্টম শ্রেণি</text>
+                        </g>
+                        
+                        <text x="25" y="200" font-size="14" fill="#0f172a" font-weight="bold" transform="rotate(-90 25,200)">ছাত্রছাত্রীর সংখ্যা</text>
+                    </svg>
+                    <p class="text-muted mt-2 mb-0"><i>চিত্র: সপ্তম ও অষ্টম শ্রেণির ছাত্রছাত্রীদের প্রিয় খেলার দ্বি-স্তম্ভ লেখচিত্র।</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">4. কৃষ্ণনগরের এক কুমোরের পাঁচ মাসের মাটির পুতুল ও শোলার তৈরি পুতুলের তথ্য নীচের টেবিলে লিখলাম। এই তথ্য দ্বিস্তম্ভ লেখের মাধ্যমে প্রকাশ করার চেষ্টা করি।<br>
+        <div class="table-responsive mt-2">
+            <table class="table table-bordered text-center mb-0">
+                <tbody><tr><th>মাস</th><th>জানুয়ারি</th><th>ফেব্রুয়ারি</th><th>মার্চ</th><th>এপ্রিল</th><th>মে</th></tr>
+                <tr><td>মাটির পুতুলের সংখ্যা</td><td>600</td><td>550</td><td>450</td><td>750</td><td>900</td></tr>
+                <tr><td>শোলার পুতুলের সংখ্যা</td><td>500</td><td>450</td><td>600</td><td>650</td><td>700</td></tr>
+            </tbody></table>
+        </div></div>
+        <div class="st-math-ans">
+            <div class="st-calc-step">
+                <p><strong>স্কেল:</strong> Y-অক্ষে 1 একক = 100 টি পুতুল।</p>
+                <div class="text-center mt-4 mb-4">
+                    <svg viewBox="0 0 650 400" width="100%">
+                        
+                        <!-- Grid Lines -->
+                        <g stroke="#e2e8f0" stroke-width="1">
+                            <line x1="60" y1="350" x2="600" y2="350" stroke="#94a3b8" stroke-width="2"></line>
+                            <line x1="60" y1="350" x2="60" y2="30" stroke="#94a3b8" stroke-width="2"></line>
+                            
+                            <!-- Grids (0 to 1000, step 200). 100 unit = 30px -->
+                            <line x1="60" y1="290" x2="600" y2="290"></line> <text x="50" y="295" font-size="12" text-anchor="end">200</text>
+                            <line x1="60" y1="230" x2="600" y2="230"></line> <text x="50" y="235" font-size="12" text-anchor="end">400</text>
+                            <line x1="60" y1="170" x2="600" y2="170"></line> <text x="50" y="175" font-size="12" text-anchor="end">600</text>
+                            <line x1="60" y1="110" x2="600" y2="110"></line> <text x="50" y="115" font-size="12" text-anchor="end">800</text>
+                            <line x1="60" y1="50" x2="600" y2="50"></line> <text x="50" y="55" font-size="12" text-anchor="end">1000</text>
+                        </g>
+
+                        <!-- Bars: height = (val/100)*30 -->
+                        <g>
+                            <!-- জানুয়ারি -->
+                            <rect x="90" y="170" width="30" height="180" fill="#10b981" rx="1"></rect> <!-- Matir: 600 -->
+                            <rect x="120" y="200" width="30" height="150" fill="#f59e0b" rx="1"></rect> <!-- Sholar: 500 -->
+                            
+                            <!-- ফেব্রুয়ারি -->
+                            <rect x="190" y="185" width="30" height="165" fill="#10b981" rx="1"></rect> <!-- Matir: 550 -->
+                            <rect x="220" y="215" width="30" height="135" fill="#f59e0b" rx="1"></rect> <!-- Sholar: 450 -->
+                            
+                            <!-- মার্চ -->
+                            <rect x="290" y="215" width="30" height="135" fill="#10b981" rx="1"></rect> <!-- Matir: 450 -->
+                            <rect x="320" y="170" width="30" height="180" fill="#f59e0b" rx="1"></rect> <!-- Sholar: 600 -->
+                            
+                            <!-- এপ্রিল -->
+                            <rect x="390" y="125" width="30" height="225" fill="#10b981" rx="1"></rect> <!-- Matir: 750 -->
+                            <rect x="420" y="155" width="30" height="195" fill="#f59e0b" rx="1"></rect> <!-- Sholar: 650 -->
+                            
+                            <!-- মে -->
+                            <rect x="490" y="80" width="30" height="270" fill="#10b981" rx="1"></rect> <!-- Matir: 900 -->
+                            <rect x="520" y="140" width="30" height="210" fill="#f59e0b" rx="1"></rect> <!-- Sholar: 700 -->
+                        </g>
+
+                        <!-- X Axis Labels -->
+                        <g font-size="14" fill="#0f172a" font-weight="600" text-anchor="middle">
+                            <text x="120" y="375">জানুয়ারি</text>
+                            <text x="220" y="375">ফেব্রুয়ারি</text>
+                            <text x="320" y="375">মার্চ</text>
+                            <text x="420" y="375">এপ্রিল</text>
+                            <text x="520" y="375">মে</text>
+                        </g>
+
+                        <!-- Legend -->
+                        <g font-size="13" fill="#334155">
+                            <rect x="450" y="30" width="15" height="15" fill="#10b981" rx="2"></rect>
+                            <text x="475" y="42">মাটির পুতুল</text>
+                            <rect x="450" y="55" width="15" height="15" fill="#f59e0b" rx="2"></rect>
+                            <text x="475" y="67">শোলার পুতুল</text>
+                        </g>
+                        
+                        <text x="25" y="200" font-size="14" fill="#0f172a" font-weight="bold" transform="rotate(-90 25,200)">পুতুলের সংখ্যা</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">6. চরাই চারণ উচ্চমাধ্যমিক বিদ্যালয়ে গত চার বছরের ও এই বছরের ছাত্রছাত্রীদের সংখ্যার তালিকা তৈরি করে নীচে লিখলাম। এই তথ্য দ্বিস্তম্ভ লেখচিত্রে প্রকাশ করি। সময়ের সাথে সাথে ছাত্রছাত্রীদের শিক্ষার হার কী রূপ হয়েছে তা হিসাব করি।<br>
+        <div class="table-responsive mt-2">
+            <table class="table table-bordered text-center mb-0">
+                <tbody><tr><th>বছর</th><th>2009</th><th>2010</th><th>2011</th><th>2012</th><th>2013</th></tr>
+                <tr><td>ছাত্র</td><td>628</td><td>536</td><td>709</td><td>655</td><td>660</td></tr>
+                <tr><td>ছাত্রী</td><td>312</td><td>415</td><td>384</td><td>510</td><td>629</td></tr>
+            </tbody></table>
+        </div></div>
+        <div class="st-math-ans">
+            <div class="st-calc-step">
+                <p><strong>স্কেল:</strong> Y-অক্ষে 1 একক = 100 জন শিক্ষার্থী।</p>
+                <div class="text-center mt-4 mb-4">
+                    <svg viewBox="0 0 650 400" width="100%">
+                        
+                        <!-- Grid Lines -->
+                        <g stroke="#e2e8f0" stroke-width="1">
+                            <line x1="60" y1="350" x2="600" y2="350" stroke="#94a3b8" stroke-width="2"></line>
+                            <line x1="60" y1="350" x2="60" y2="30" stroke="#94a3b8" stroke-width="2"></line>
+                            
+                            <!-- Grids (0 to 800, step 200). 100 unit = 37.5px -->
+                            <line x1="60" y1="275" x2="600" y2="275"></line> <text x="50" y="280" font-size="12" text-anchor="end">200</text>
+                            <line x1="60" y1="200" x2="600" y2="200"></line> <text x="50" y="205" font-size="12" text-anchor="end">400</text>
+                            <line x1="60" y1="125" x2="600" y2="125"></line> <text x="50" y="130" font-size="12" text-anchor="end">600</text>
+                            <line x1="60" y1="50" x2="600" y2="50"></line> <text x="50" y="55" font-size="12" text-anchor="end">800</text>
+                        </g>
+
+                        <!-- Bars: height = (val/100)*37.5 -->
+                        <g>
+                            <!-- 2009 -->
+                            <rect x="90" y="114.5" width="30" height="235.5" fill="#3b82f6" rx="1"></rect> <!-- Boy: 628 -->
+                            <rect x="120" y="233" width="30" height="117" fill="#ec4899" rx="1"></rect> <!-- Girl: 312 -->
+                            
+                            <!-- 2010 -->
+                            <rect x="190" y="149" width="30" height="201" fill="#3b82f6" rx="1"></rect> <!-- Boy: 536 -->
+                            <rect x="220" y="194.4" width="30" height="155.6" fill="#ec4899" rx="1"></rect> <!-- Girl: 415 -->
+                            
+                            <!-- 2011 -->
+                            <rect x="290" y="84.1" width="30" height="265.9" fill="#3b82f6" rx="1"></rect> <!-- Boy: 709 -->
+                            <rect x="320" y="206" width="30" height="144" fill="#ec4899" rx="1"></rect> <!-- Girl: 384 -->
+                            
+                            <!-- 2012 -->
+                            <rect x="390" y="104.4" width="30" height="245.6" fill="#3b82f6" rx="1"></rect> <!-- Boy: 655 -->
+                            <rect x="420" y="158.75" width="30" height="191.25" fill="#ec4899" rx="1"></rect> <!-- Girl: 510 -->
+                            
+                            <!-- 2013 -->
+                            <rect x="490" y="102.5" width="30" height="247.5" fill="#3b82f6" rx="1"></rect> <!-- Boy: 660 -->
+                            <rect x="520" y="114.1" width="30" height="235.9" fill="#ec4899" rx="1"></rect> <!-- Girl: 629 -->
+                        </g>
+
+                        <!-- X Axis Labels -->
+                        <g font-size="14" fill="#0f172a" font-weight="600" text-anchor="middle">
+                            <text x="120" y="375">2009</text>
+                            <text x="220" y="375">2010</text>
+                            <text x="320" y="375">2011</text>
+                            <text x="420" y="375">2012</text>
+                            <text x="520" y="375">2013</text>
+                        </g>
+
+                        <!-- Legend -->
+                        <g font-size="13" fill="#334155">
+                            <rect x="480" y="30" width="15" height="15" fill="#3b82f6" rx="2"></rect>
+                            <text x="505" y="42">ছাত্র</text>
+                            <rect x="480" y="55" width="15" height="15" fill="#ec4899" rx="2"></rect>
+                            <text x="505" y="67">ছাত্রী</text>
+                        </g>
+                        
+                        <text x="25" y="200" font-size="14" fill="#0f172a" font-weight="bold" transform="rotate(-90 25,200)">শিক্ষার্থীর সংখ্যা</text>
+                    </svg>
+                </div>
+                <h5 class="fw-bold mt-4 text-dark">সিদ্ধান্ত:</h5>
+                <p>উপরের দ্বি-স্তম্ভ লেখচিত্র থেকে স্পষ্ট দেখা যাচ্ছে যে, 2009 সাল থেকে 2013 সালের মধ্যে ছাত্রীদের সংখ্যা (গোলাপি স্তম্ভ) উল্লেখযোগ্যভাবে বৃদ্ধি পেয়েছে (312 থেকে 629)। ছেলেদের সংখ্যাও বৃদ্ধি পেয়েছে তবে ছাত্রীদের বৃদ্ধির হার অনেক বেশি। সুতরাং, <strong>সময়ের সাথে সাথে ছাত্রীদের শিক্ষার প্রতি আগ্রহ এবং সার্বিক শিক্ষার হার বৃদ্ধি পেয়েছে।</strong></p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">8. আমরা 6 জন বন্ধু প্রথম পর্যায়ক্রমিক পরীক্ষার পরে দলগতভাবে হাতেকলমে নতুন পদ্ধতিতে বিষয়গুলি আয়ত্ত করার চেষ্টা করছি। তাই দ্বিতীয় পর্যায়ক্রমিক পরীক্ষার পরে দুটি পরীক্ষায় পাওয়া শতকরা নম্বরের একটি তালিকা তৈরি করলাম—<br>
+        <div class="table-responsive mt-2">
+            <table class="table table-bordered text-center mb-0">
+                <tbody><tr><th>বন্ধুর নাম</th><th>সুমিত</th><th>রুমি</th><th>জাহির</th><th>মেরি</th><th>জোসেফ</th><th>নাজনীন</th></tr>
+                <tr><td>১ম পর্যায়ক্রমিক পরীক্ষা</td><td>45%</td><td>60%</td><td>55%</td><td>38%</td><td>72%</td><td>62%</td></tr>
+                <tr><td>২য় পর্যায়ক্রমিক পরীক্ষা</td><td>65%</td><td>65%</td><td>68%</td><td>60%</td><td>80%</td><td>70%</td></tr>
+            </tbody></table>
+        </div><br>দ্বিস্তম্ভ লেখচিত্র তৈরি করে নীচে নতুন পদ্ধতিতে কে কে বেশি উন্নতি করেছে তা বিশ্লেষণ করার চেষ্টা করি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step">
+                <p><strong>স্কেল:</strong> Y-অক্ষে 1 একক = 10% নম্বর।</p>
+                <div class="text-center mt-4 mb-4">
+                    <svg viewBox="0 0 700 400" width="100%">
+                        
+                        <!-- Grid Lines -->
+                        <g stroke="#e2e8f0" stroke-width="1">
+                            <line x1="60" y1="350" x2="650" y2="350" stroke="#94a3b8" stroke-width="2"></line>
+                            <line x1="60" y1="350" x2="60" y2="30" stroke="#94a3b8" stroke-width="2"></line>
+                            
+                            <!-- Grids (0 to 100, step 20). 10% = 30px -->
+                            <line x1="60" y1="290" x2="650" y2="290"></line> <text x="50" y="295" font-size="12" text-anchor="end">20%</text>
+                            <line x1="60" y1="230" x2="650" y2="230"></line> <text x="50" y="235" font-size="12" text-anchor="end">40%</text>
+                            <line x1="60" y1="170" x2="650" y2="170"></line> <text x="50" y="175" font-size="12" text-anchor="end">60%</text>
+                            <line x1="60" y1="110" x2="650" y2="110"></line> <text x="50" y="115" font-size="12" text-anchor="end">80%</text>
+                            <line x1="60" y1="50" x2="650" y2="50"></line> <text x="50" y="55" font-size="12" text-anchor="end">100%</text>
+                        </g>
+
+                        <!-- Bars: height = (val/10)*30 -->
+                        <g>
+                            <!-- সুমিত -->
+                            <rect x="90" y="215" width="25" height="135" fill="#8b5cf6" rx="1"></rect> <!-- 45 -->
+                            <rect x="115" y="155" width="25" height="195" fill="#14b8a6" rx="1"></rect> <!-- 65 -->
+                            
+                            <!-- রুমি -->
+                            <rect x="180" y="170" width="25" height="180" fill="#8b5cf6" rx="1"></rect> <!-- 60 -->
+                            <rect x="205" y="155" width="25" height="195" fill="#14b8a6" rx="1"></rect> <!-- 65 -->
+                            
+                            <!-- জাহির -->
+                            <rect x="270" y="185" width="25" height="165" fill="#8b5cf6" rx="1"></rect> <!-- 55 -->
+                            <rect x="295" y="146" width="25" height="204" fill="#14b8a6" rx="1"></rect> <!-- 68 -->
+                            
+                            <!-- মেরি -->
+                            <rect x="360" y="236" width="25" height="114" fill="#8b5cf6" rx="1"></rect> <!-- 38 -->
+                            <rect x="385" y="170" width="25" height="180" fill="#14b8a6" rx="1"></rect> <!-- 60 -->
+                            
+                            <!-- জোসেফ -->
+                            <rect x="450" y="134" width="25" height="216" fill="#8b5cf6" rx="1"></rect> <!-- 72 -->
+                            <rect x="475" y="110" width="25" height="240" fill="#14b8a6" rx="1"></rect> <!-- 80 -->
+                            
+                            <!-- নাজনীন -->
+                            <rect x="540" y="164" width="25" height="186" fill="#8b5cf6" rx="1"></rect> <!-- 62 -->
+                            <rect x="565" y="140" width="25" height="210" fill="#14b8a6" rx="1"></rect> <!-- 70 -->
+                        </g>
+
+                        <!-- X Axis Labels -->
+                        <g font-size="14" fill="#0f172a" font-weight="600" text-anchor="middle">
+                            <text x="115" y="375">সুমিত</text>
+                            <text x="205" y="375">রুমি</text>
+                            <text x="295" y="375">জাহির</text>
+                            <text x="385" y="375">মেরি</text>
+                            <text x="475" y="375">জোসেফ</text>
+                            <text x="565" y="375">নাজনীন</text>
+                        </g>
+
+                        <!-- Legend -->
+                        <g font-size="13" fill="#334155">
+                            <rect x="510" y="30" width="15" height="15" fill="#8b5cf6" rx="2"></rect>
+                            <text x="535" y="42">১ম পরীক্ষা</text>
+                            <rect x="510" y="55" width="15" height="15" fill="#14b8a6" rx="2"></rect>
+                            <text x="535" y="67">২য় পরীক্ষা</text>
+                        </g>
+                        
+                        <text x="25" y="200" font-size="14" fill="#0f172a" font-weight="bold" transform="rotate(-90 25,200)">শতকরা নম্বর</text>
+                    </svg>
+                </div>
+                <h5 class="fw-bold mt-4 text-dark">বিশ্লেষণ (Analysis):</h5>
+                <p>লেখচিত্র থেকে দেখতে পাচ্ছি, সকলেরই দ্বিতীয় পরীক্ষায় নম্বর বেড়েছে। তবে উন্নতি কার সবচেয়ে বেশি হয়েছে তা নম্বরের পার্থক্য দেখে বোঝা যায়:</p>
+                <ul>
+                    <li><strong>মেরি:</strong> $60\% - 38\% = 22\%$ নম্বর বেশি পেয়েছে (সবচেয়ে বেশি উন্নতি)।</li>
+                    <li><strong>সুমিত:</strong> $65\% - 45\% = 20\%$ নম্বর বেশি পেয়েছে।</li>
+                </ul>
+                <p>অর্থাৎ, নতুন পদ্ধতিতে <strong>মেরি এবং সুমিত</strong> সবথেকে বেশি উন্নতি করেছে।</p>
+            </div>
+        </div>
+    </div>
+
+<div class="st-math-card">
+        <div class="st-math-q">9. উৎপল ও আমিনা বিবির তৈরি তাঁতের শাড়ির দ্বিস্তম্ভ লেখচিত্র দেখি এবং প্রশ্নগুলির উত্তর দিই—<br><br>
+        (i) কোন বছরে উৎপল সবচেয়ে বেশি তাঁতের শাড়ি বুনেছে ও কতগুলো শাড়ি বুনেছে। আবার কোন বছরে উৎপল সবচেয়ে কম তাঁতের শাড়ি বুনেছে ও কতগুলো শাড়ি বুনেছে লিখি।<br>
+        (ii) কোন বছরে আমিনা বিবি সবচেয়ে বেশি শাড়ি বুনেছে ও কতগুলো বুনেছে লিখি। আবার কোন বছরে আমিনা বিবি সবচেয়ে কম শাড়ি বুনেছে ও কতগুলো বুনেছে লিখি।<br>
+        (iii) কোন কোন বছরে উৎপল আমিনা বিবির থেকে বেশি শাড়ি বুনেছে।<br>
+        (iv) আবার কোন কোন বছরে আমিনা বিবি উৎপলের থেকে বেশি শাড়ি বুনেছে লিখি।</div>
+        <div class="st-math-ans">
+            <div class="st-calc-step">
+                <p class="text-muted mb-3"><i>[বইয়ের লেখচিত্রে নীল স্তম্ভ উৎপলের এবং গোলাপি স্তম্ভ আমিনা বিবির শাড়ি সংখ্যা নির্দেশ করছে। Y-অক্ষে 1 একক = 2 টি শাড়ি।]</i></p>
+                <ol>
+                    <li><strong>(i)</strong> উৎপল সবচেয়ে বেশি তাঁতের শাড়ি বুনেছে <strong>2008</strong> সালে। সংখ্যাটি হলো <strong>28 টি</strong>।<br>উৎপল সবচেয়ে কম তাঁতের শাড়ি বুনেছে <strong>2010</strong> সালে। সংখ্যাটি হলো <strong>14 টি</strong>।</li>
+                    
+                    <li><strong>(ii)</strong> আমিনা বিবি সবচেয়ে বেশি শাড়ি বুনেছে <strong>2011</strong> সালে। সংখ্যাটি হলো <strong>22 টি</strong>।<br>আমিনা বিবি সবচেয়ে কম শাড়ি বুনেছে <strong>2009</strong> সালে। সংখ্যাটি হলো <strong>12 টি</strong>।</li>
+                    
+                    <li><strong>(iii)</strong> উৎপলের নীল স্তম্ভটি আমিনা বিবির গোলাপি স্তম্ভের চেয়ে বড়ো যে যে বছরে— <strong>2008</strong> সালে (28 &gt; 20) এবং <strong>2009</strong> সালে (16 &gt; 12)। অর্থাৎ, উৎপল <strong>2008 ও 2009</strong> সালে আমিনা বিবির থেকে বেশি শাড়ি বুনেছে।</li>
+                    
+                    <li><strong>(iv)</strong> আমিনা বিবির গোলাপি স্তম্ভটি উৎপলের নীল স্তম্ভের চেয়ে বড়ো যে যে বছরে— <strong>2010</strong> সালে (18 &gt; 14) এবং <strong>2011</strong> সালে (22 &gt; 16)। অর্থাৎ, আমিনা বিবি <strong>2010 ও 2011</strong> সালে উৎপলের থেকে বেশি শাড়ি বুনেছে।</li>
+                </ol>
+            </div>
+        </div>
+    </div></div>
+<script>
+(function () {
+  function renderMathJax() {
+    if (!window.MathJax || !MathJax.Hub) return;
+    var target = document.querySelector(".solution-container") || document.body;
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, target]);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", renderMathJax, { once: true });
+  else renderMathJax();
+  window.abvrpMc_rerenderMathJax = renderMathJax;
+})();
+</script>
+<script>
+(function(){'use strict';var root=document.querySelector('.solution-container');if(!root)return;var timer;function fit(){var small=window.matchMedia('(max-width:900px)').matches;root.querySelectorAll('.stat-table').forEach(function(table){table.classList.remove('is-overflowing');table.style.removeProperty('--fit-font-size');table.style.removeProperty('--fit-cell-padding');if(!small)return;var wrapper=table.closest('.stat-table-wrapper');if(!wrapper)return;var oldLayout=table.style.tableLayout,oldWidth=table.style.width;table.style.tableLayout='auto';table.style.width='max-content';var available=wrapper.clientWidth,natural=table.scrollWidth;table.style.tableLayout=oldLayout;table.style.width=oldWidth;if(!available||natural<=available+1)return;table.classList.add('is-overflowing');var cols=1;table.querySelectorAll('tr').forEach(function(row){var count=0;row.querySelectorAll('th,td').forEach(function(cell){count+=Math.max(1,cell.colSpan||1)});cols=Math.max(cols,count)});var font=cols>=10?8:cols>=7?9:cols>=5?10:11;table.style.setProperty('--fit-font-size',font+'px');table.style.setProperty('--fit-cell-padding',cols>=7?'2px':'3px');requestAnimationFrame(function(){var size=font;while(table.scrollWidth>wrapper.clientWidth+1&&size>7){size--;table.style.setProperty('--fit-font-size',size+'px')}})})}function schedule(){clearTimeout(timer);timer=setTimeout(fit,100)}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fit,{once:true});else fit();window.addEventListener('resize',schedule);window.addEventListener('orientationchange',schedule);if('ResizeObserver'in window){var ro=new ResizeObserver(schedule);ro.observe(root)}if('MutationObserver'in window){var mo=new MutationObserver(schedule);mo.observe(root,{childList:true,subtree:true,characterData:true})}})();
+</script>
+<script src="https://cdn.jsdelivr.net/gh/aslamkd/MadhyamikGanitprabha@main/koshe-dekhi-tools.js" charset="utf-8"></script>
+</body>
+</html>
